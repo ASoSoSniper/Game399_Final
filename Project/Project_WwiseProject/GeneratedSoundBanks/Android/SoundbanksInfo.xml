@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Android</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D5278FC4-65CA-22E4-69FF-C0B804289B21}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="2204642885" Type="User" Language="SFX" Hash="{111ECE88-6303-4129-A118-FDD18B292D32}">
+			<ShortName>Reactor</ShortName>
+			<Path>Reactor.bnk</Path>
+			<Media>
+				<File Id="616637430" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BrokenReactorSFX.wav</ShortName>
+					<CachePath>SFX/BrokenReactorSFX_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1028807892" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ReactorSFX.wav</ShortName>
+					<CachePath>SFX/ReactorSFX_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2901348110" Name="Play_BrokenReactorSFX" MaxAttenuation="100" DurationType="OneShot" DurationMin="10.635759" DurationMax="10.635759">
+					<MediaRefs>
+						<MediaRef Id="616637430"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="623613221" Name="Play_ReactorSFX" MaxAttenuation="100" DurationType="OneShot" DurationMin="10.67288" DurationMax="10.67288">
+					<MediaRefs>
+						<MediaRef Id="1028807892"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{B5E6B146-F90F-6967-D60B-972BDF013FFE}</FileHash>
+</SoundBanksInfo>

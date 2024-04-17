@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_BrokenReactorSFX" ID="{63DBC951-22DE-493F-8A98-6CBFADFA0CE9}">
+					<ChildrenList>
+						<Action Name="" ID="{17F01558-6829-4BDF-8E11-841476EF64C2}" ShortID="601764524">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BrokenReactorSFX" ID="{2E6401E8-FE1C-463D-9B83-7ED4AF69C1B0}" WorkUnitID="{B54BF390-0933-49F6-993C-69A44CB46CBF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ReactorSFX" ID="{1BF371B4-D2F3-4930-98A6-D579FBF14B3E}">
+					<ChildrenList>
+						<Action Name="" ID="{00AC7ECC-84B0-4869-A32E-17EE71D408D3}" ShortID="798048427">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ReactorSFX" ID="{0211B97C-F77D-477C-A972-C716F088FB39}" WorkUnitID="{B54BF390-0933-49F6-993C-69A44CB46CBF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
