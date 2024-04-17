@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A3D071E0-189E-4590-A050-ED40F61DA22B}" SchemaVersion="119">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{A3D071E0-189E-4590-A050-ED40F61DA22B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Reactor" ID="{A287A6E8-7A01-4DFF-A522-DC00200CDC19}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_ReactorSFX" ID="{1BF371B4-D2F3-4930-98A6-D579FBF14B3E}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_BrokenReactorSFX" ID="{63DBC951-22DE-493F-8A98-6CBFADFA0CE9}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

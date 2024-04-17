@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B54BF390-0933-49F6-993C-69A44CB46CBF}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{B54BF390-0933-49F6-993C-69A44CB46CBF}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="ReactorSFX" ID="{0211B97C-F77D-477C-A972-C716F088FB39}" ShortID="198554735">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Spatial_Audio_Voice" ID="{DE8A4F40-703D-410F-B24D-CE3E141DFEDC}" WorkUnitID="{6A3C4BC6-A6F3-4E50-AB34-F1AF4ABFB7CA}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1651577E-F4A7-41DB-8809-26E55165214A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5B0694AA-29FF-45DE-A8E7-1445EFDAEEBA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ReactorSFX" ID="{7404A941-0255-415C-8824-8172E97B81B8}">
+							<Language>SFX</Language>
+							<AudioFile>ReactorSFX.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1028807892"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ReactorSFX" ID="{7404A941-0255-415C-8824-8172E97B81B8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="BrokenReactorSFX" ID="{2E6401E8-FE1C-463D-9B83-7ED4AF69C1B0}" ShortID="189694454">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Spatial_Audio_Voice" ID="{DE8A4F40-703D-410F-B24D-CE3E141DFEDC}" WorkUnitID="{6A3C4BC6-A6F3-4E50-AB34-F1AF4ABFB7CA}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1651577E-F4A7-41DB-8809-26E55165214A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5B0694AA-29FF-45DE-A8E7-1445EFDAEEBA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="BrokenReactorSFX" ID="{17492E5F-1A61-4A62-A9E6-6010DB6E5C1E}">
+							<Language>SFX</Language>
+							<AudioFile>BrokenReactorSFX.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="616637430"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="BrokenReactorSFX" ID="{17492E5F-1A61-4A62-A9E6-6010DB6E5C1E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
