@@ -18,8 +18,8 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "a07ac951-e86e-4125-b90f-0f173657b6c4",
-                    "path": "<OculusTouchController>{LeftHand}/start",
+                    "id": "c6a735e7-2d9f-4f09-a9a2-ebf872bb4870",
+                    "path": "<XRController>{LeftHand}/{Menu}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

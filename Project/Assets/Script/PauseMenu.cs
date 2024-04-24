@@ -24,7 +24,7 @@ public class PauseMenu : MonoBehaviour
     }
 
 
-    public void PausedButtonPressed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    private void PausedButtonPressed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
         //if (context.performed)
             DisplayWristUI();
