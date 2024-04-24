@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6b136f46a09225479a8dec645cd6f39d
     GuidInternal: 
-    m_lastTime: -8584882022476618511
+    m_lastTime: -8584876213117518923
     List:
     - name: Play_BrokenReactorSFX
       guid: 51c9db63de223f498a986cbfadfa0ce9
@@ -111,8 +111,8 @@ MonoBehaviour:
         guid: 51c9db63de223f498a986cbfadfa0ce9
       Path: Events\Default Work Unit\Play_BrokenReactorSFX
       maxAttenuation: 100
-      maxDuration: 10.635759
-      minDuration: 10.635759
+      maxDuration: -1
+      minDuration: -1
     - name: Play_ReactorSFX
       guid: b471f31bf3d2304998a6d579fbf14b3e
       id: 623613221
@@ -128,8 +128,8 @@ MonoBehaviour:
         guid: b471f31bf3d2304998a6d579fbf14b3e
       Path: Events\Default Work Unit\Play_ReactorSFX
       maxAttenuation: 100
-      maxDuration: 10.67288
-      minDuration: 10.67288
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -187,7 +187,7 @@ MonoBehaviour:
     m_lastTime: -8584882022475622707
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0a0000000c0000000d0000000f00000013000000
+  ExpandedWaapiItemIds: 0500000006000000070000000c0000000d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

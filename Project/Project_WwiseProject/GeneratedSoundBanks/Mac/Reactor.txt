@@ -3,6 +3,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	2901348110	Play_BrokenReactorSFX			\Default Work Unit\Play_BrokenReactorSFX	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	616637430	BrokenReactorSFX	C:\Users\conno\Desktop\Unity Projects\Game399_Final\Project\Project_WwiseProject\.cache\Mac\SFX\BrokenReactorSFX_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\BrokenReactorSFX		1876244
-	1028807892	ReactorSFX	C:\Users\conno\Desktop\Unity Projects\Game399_Final\Project\Project_WwiseProject\.cache\Mac\SFX\ReactorSFX_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\ReactorSFX		1882792
+	616637430	BrokenReactorSFX	C:\Users\conno\Desktop\Unity Projects\Game399_Final\Project\Project_WwiseProject\.cache\Mac\SFX\BrokenReactorSFX_11A93380.wem		\Actor-Mixer Hierarchy\Default Work Unit\BrokenReactorSFX		1876244
+	1028807892	ReactorSFX	C:\Users\conno\Desktop\Unity Projects\Game399_Final\Project\Project_WwiseProject\.cache\Mac\SFX\ReactorSFX_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\ReactorSFX		1882792
 
