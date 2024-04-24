@@ -41,7 +41,7 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""a07ac951-e86e-4125-b90f-0f173657b6c4"",
-                    ""path"": ""<OculusTouchController>/start"",
+                    ""path"": ""<OculusTouchController>{LeftHand}/start"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

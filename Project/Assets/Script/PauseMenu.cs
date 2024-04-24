@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class PauseMenu : MonoBehaviour
@@ -11,10 +10,10 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private XRDirectInteractor directInteractor;
     [SerializeField] private GameObject wristMenu;
     [SerializeField] private GameObject rayController;
-    public GameObject wristUI;
+  
     
 
-    public bool activeWristUI = true;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -33,17 +32,16 @@ public class PauseMenu : MonoBehaviour
 
     public void DisplayWristUI()
     {
-        if (activeWristUI)
+        if (wristMenu.activeInHierarchy == false)
         {
-            wristUI.SetActive(false);
-            activeWristUI = false;
-            Time.timeScale = 1;
+            directInteractor.SendHapticImpulse(0.4f, 0.6f);
+            wristMenu.SetActive(true);
+            rayController.SetActive(true);
         }
-        else if (!activeWristUI)
+        else
         {
-            wristUI.SetActive(true);
-            activeWristUI = true;
-            Time.timeScale = 0;
+            wristMenu.SetActive(false);
+            rayController.SetActive(false);
         }
     }
 
