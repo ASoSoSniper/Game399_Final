@@ -7,21 +7,27 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class PauseMenu : MonoBehaviour
 {
-
+    private GameInputs _input;
+    [SerializeField] private XRDirectInteractor directInteractor;
+    [SerializeField] private GameObject wristMenu;
+    [SerializeField] private GameObject rayController;
     public GameObject wristUI;
+    
 
     public bool activeWristUI = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        DisplayWristUI();
+        _input = new GameInputs();
+        _input.Enable();
+        _input.Menu.MenuPressed.performed += PausedButtonPressed;
     }
 
 
-    public void PausedButtonPressed(InputAction.CallbackContext context)
+    public void PausedButtonPressed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        if (context.performed)
+        //if (context.performed)
             DisplayWristUI();
     }
 
