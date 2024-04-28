@@ -48,6 +48,17 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""action"": ""Menu Pressed"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8878f0c7-3cde-4edb-b654-35b52e810a99"",
+                    ""path"": ""<OculusTouchController>{LeftHand}/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu Pressed"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
