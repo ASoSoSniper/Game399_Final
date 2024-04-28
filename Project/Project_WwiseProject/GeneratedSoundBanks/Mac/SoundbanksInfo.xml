@@ -22,26 +22,26 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="2204642885" Type="User" Language="SFX" Hash="{111ECE88-6303-4129-A118-FDD18B292D32}">
+		<SoundBank Id="2204642885" Type="User" Language="SFX" Hash="{1D9BB1BF-326A-2E6D-F125-F9FB2A0A7EF4}">
 			<ShortName>Reactor</ShortName>
 			<Path>Reactor.bnk</Path>
 			<Media>
 				<File Id="616637430" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BrokenReactorSFX.wav</ShortName>
-					<CachePath>SFX/BrokenReactorSFX_818F3B66.wem</CachePath>
+					<CachePath>SFX/BrokenReactorSFX_11A93380.wem</CachePath>
 				</File>
 				<File Id="1028807892" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ReactorSFX.wav</ShortName>
-					<CachePath>SFX/ReactorSFX_818F3B66.wem</CachePath>
+					<CachePath>SFX/ReactorSFX_FBC78EF0.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2901348110" Name="Play_BrokenReactorSFX" MaxAttenuation="100" DurationType="OneShot" DurationMin="10.635759" DurationMax="10.635759">
+				<Event Id="2901348110" Name="Play_BrokenReactorSFX" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="616637430"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="623613221" Name="Play_ReactorSFX" MaxAttenuation="100" DurationType="OneShot" DurationMin="10.67288" DurationMax="10.67288">
+				<Event Id="623613221" Name="Play_ReactorSFX" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="1028807892"/>
 					</MediaRefs>
@@ -49,5 +49,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D225C06B-3471-E09C-E847-0F514C3EE016}</FileHash>
+	<FileHash>{465B58CC-E880-7681-EDD2-6A15D99D348D}</FileHash>
 </SoundBanksInfo>

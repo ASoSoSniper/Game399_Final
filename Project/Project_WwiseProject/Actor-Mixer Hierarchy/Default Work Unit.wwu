@@ -6,6 +6,7 @@
 				<Sound Name="ReactorSFX" ID="{0211B97C-F77D-477C-A972-C716F088FB39}" ShortID="198554735">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -35,6 +36,7 @@
 				<Sound Name="BrokenReactorSFX" ID="{2E6401E8-FE1C-463D-9B83-7ED4AF69C1B0}" ShortID="189694454">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -50,6 +52,9 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="BrokenReactorSFX" ID="{17492E5F-1A61-4A62-A9E6-6010DB6E5C1E}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>BrokenReactorSFX.wav</AudioFile>
 							<MediaIDList>
