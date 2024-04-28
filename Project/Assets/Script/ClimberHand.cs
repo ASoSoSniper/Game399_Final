@@ -61,18 +61,41 @@ public class ClimberHand : MonoBehaviour
         }
 
         grabPoint = nearestPoint;
-        climber.SetHand(this);
+
+        if (grabPoint)
+        {
+            if (grabPoint.CompareTag("ClimbPoint"))
+            {
+                climber.SetHand(this);
+            }
+            else if (grabPoint.CompareTag("Weapon"))
+            {
+                GrabWeapon();
+            }
+        }
+            
     }
 
     public void ReleasePoint()
     {
+        if (grabPoint)
+        {
+            if (grabPoint.CompareTag("ClimbPoint"))
+            {
+                climber.ClearHand();
+            }
+            else if (grabPoint.CompareTag("Weapon"))
+            {
+                ReleaseWeapon();
+            }
+        }
+
         grabPoint = null;
-        climber.ClearHand();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("ClimbPoint"))
+        if (other.gameObject.CompareTag("ClimbPoint") || other.gameObject.CompareTag("Weapon"))
         {
             AddPointToList(other.gameObject);
         }
@@ -80,7 +103,7 @@ public class ClimberHand : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("ClimbPoint"))
+        if (other.gameObject.CompareTag("ClimbPoint") || other.gameObject.CompareTag("Weapon"))
         {
             RemovePointFromList(other.gameObject);
         }
@@ -100,5 +123,25 @@ public class ClimberHand : MonoBehaviour
         {
             grabObjects.Remove(point);
         }
+    }
+
+    void GrabWeapon()
+    {
+        MeleeWeapon weapon = grabPoint.GetComponent<MeleeWeapon>();
+        weapon.ToggleGrabMode(true);
+
+        grabPoint.transform.parent = transform;
+        grabPoint.transform.localPosition = Vector3.zero;
+        grabPoint.transform.rotation = transform.rotation;
+    }
+
+    void ReleaseWeapon()
+    {
+        if (!grabPoint) return;
+
+        grabPoint.transform.parent = null;
+
+        MeleeWeapon weapon = grabPoint.GetComponent<MeleeWeapon>();
+        weapon.ToggleGrabMode(false);
     }
 }
