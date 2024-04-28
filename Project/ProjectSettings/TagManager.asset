@@ -7,6 +7,7 @@ TagManager:
   - RoomLight
   - SamplesInfoPanel
   - ClimbPoint
+  - Weapon
   layers:
   - Default
   - TransparentFX
