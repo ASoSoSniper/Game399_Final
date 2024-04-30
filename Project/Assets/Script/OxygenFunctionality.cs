@@ -42,4 +42,9 @@ public class OxygenFunctionality : MonoBehaviour
             NumberDisplay.text = "0 / " + maxOxygen.ToString();
         }
     }
+
+    public void GainOxygen(float oxygen)
+    {
+        oxygenAmount = Mathf.Clamp(oxygenAmount + oxygen, 0f, maxOxygen);
+    }
 }

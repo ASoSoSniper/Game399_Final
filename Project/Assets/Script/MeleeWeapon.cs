@@ -5,14 +5,17 @@ using UnityEngine;
 public class MeleeWeapon : MonoBehaviour
 {
     Rigidbody rigidBody;
-    [SerializeField] Collider hitBox;
     public bool grabbed = false;
     [SerializeField] float minimumRotMagnitude = 20f;
+    [SerializeField] Material normalMat;
+    [SerializeField] Material hitMat;
+    [SerializeField] MeshRenderer mesh;
 
     Vector3 lastPosition = Vector3.zero;
     Quaternion lastRotation;
 
-    Vector3 spaceVelocity = Vector3.zero;
+    [HideInInspector] public Vector3 spaceVelocity = Vector3.zero;
+    public float hitVelocity = 300f;
     Vector3 spaceRotation;
 
     Vector3 initPos;
@@ -49,6 +52,15 @@ public class MeleeWeapon : MonoBehaviour
 
         lastPosition = transform.position;
         lastRotation = transform.rotation;
+
+        if (spaceVelocity.magnitude >= hitVelocity)
+        {
+            if (normalMat) mesh.material = normalMat;
+        }
+        else
+        {
+            if (hitMat) mesh.material = hitMat;
+        }
     }
 
     public void ToggleGrabMode(bool active)
@@ -69,5 +81,14 @@ public class MeleeWeapon : MonoBehaviour
             rigidBody.AddForce(spaceVelocity, ForceMode.Impulse);
             if (spaceRotation.magnitude >= minimumRotMagnitude) rigidBody.AddTorque(spaceRotation, ForceMode.Impulse);
         }
+    }
+
+    public void HitObject(Collider other)
+    {
+        HittableObject hit = other.gameObject.GetComponent<HittableObject>();
+
+        if (!hit) return;
+
+        hit.HitAction();
     }
 }

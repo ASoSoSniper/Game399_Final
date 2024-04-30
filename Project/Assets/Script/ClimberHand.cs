@@ -68,7 +68,7 @@ public class ClimberHand : MonoBehaviour
             {
                 climber.SetHand(this);
             }
-            else if (grabPoint.CompareTag("Weapon"))
+            else if (grabPoint.CompareTag("Grabbable"))
             {
                 GrabWeapon();
             }
@@ -84,7 +84,7 @@ public class ClimberHand : MonoBehaviour
             {
                 climber.ClearHand();
             }
-            else if (grabPoint.CompareTag("Weapon"))
+            else if (grabPoint.CompareTag("Grabbable"))
             {
                 ReleaseWeapon();
             }
@@ -95,7 +95,7 @@ public class ClimberHand : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("ClimbPoint") || other.gameObject.CompareTag("Weapon"))
+        if (other.gameObject.CompareTag("ClimbPoint") || other.gameObject.CompareTag("Grabbable"))
         {
             AddPointToList(other.gameObject);
         }
@@ -103,7 +103,7 @@ public class ClimberHand : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("ClimbPoint") || other.gameObject.CompareTag("Weapon"))
+        if (other.gameObject.CompareTag("ClimbPoint") || other.gameObject.CompareTag("Grabbable"))
         {
             RemovePointFromList(other.gameObject);
         }
@@ -127,12 +127,15 @@ public class ClimberHand : MonoBehaviour
 
     void GrabWeapon()
     {
-        MeleeWeapon weapon = grabPoint.GetComponent<MeleeWeapon>();
-        weapon.ToggleGrabMode(true);
-
         grabPoint.transform.parent = transform;
         grabPoint.transform.localPosition = Vector3.zero;
         grabPoint.transform.rotation = transform.rotation;
+
+        MeleeWeapon weapon = grabPoint.GetComponent<MeleeWeapon>();
+        if (weapon) weapon.ToggleGrabMode(true);
+
+        OxygenTank oxygenTank = grabPoint.GetComponent<OxygenTank>();
+        if (oxygenTank) oxygenTank.GrabOxygen();
     }
 
     void ReleaseWeapon()
@@ -142,6 +145,6 @@ public class ClimberHand : MonoBehaviour
         grabPoint.transform.parent = null;
 
         MeleeWeapon weapon = grabPoint.GetComponent<MeleeWeapon>();
-        weapon.ToggleGrabMode(false);
+        if (weapon) weapon.ToggleGrabMode(false);
     }
 }
