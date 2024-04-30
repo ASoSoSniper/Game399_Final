@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo>
-	<Project Name="Project_WwiseProject" GUID="{2C29BFB2-EF1A-41BD-9BC2-CF22995916F3}" Generator="2023.1.3.8471"/>
+	<Project Name="Project_WwiseProject" GUID="{2C29BFB2-EF1A-41BD-9BC2-CF22995916F3}" Generator="2023.1.2.8444"/>
 	<CacheRoot>../../../../Project_WwiseProject/.cache</CacheRoot>
 	<Platforms>
 		<Platform Name="Android" GUID="{05E7F9F2-CC7C-4EB5-A0CA-3E33CACCD8E4}" BasePlatform="Android" BasePlatformGUID="{A2D401DE-B8B6-4FEB-8142-137C34D507CA}" Path="../../../../Project_WwiseProject/GeneratedSoundBanks/Android"/>
@@ -10,5 +10,5 @@
 	<Languages>
 		<Language Name="English(US)" Id="684519430" GUID="{C363172F-7395-4FD4-AAA5-D0BBF89EB413}" Default="true" UseAsStandIn="true"/>
 	</Languages>
-	<FileHash>{79F42728-68F0-C521-2CB5-AA27DBF704A9}</FileHash>
+	<FileHash>{13F642A3-0050-8993-6BE9-1D92AF476CB1}</FileHash>
 </ProjectInfo>

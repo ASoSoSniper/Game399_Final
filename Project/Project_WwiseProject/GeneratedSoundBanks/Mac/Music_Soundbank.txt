@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1587063413	Play_Inside_BGM			\Default Work Unit\Play_Inside_BGM	
+	1876933864	Play_Menu_BGM			\Default Work Unit\Play_Menu_BGM	
+	2993185784	Play_Outside_BGM			\Default Work Unit\Play_Outside_BGM	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	519502798	Outside_BGM	D:\2024 Spring Semester Classes\VR & AR\Newer_VR_Git_Build\Game399_Final\Project\Project_WwiseProject\.cache\Mac\SFX\OrbitalDashBGM_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Outside_BGM		12085736
+	615325555	Inside_BGM	D:\2024 Spring Semester Classes\VR & AR\Newer_VR_Git_Build\Game399_Final\Project\Project_WwiseProject\.cache\Mac\SFX\OrbitalDashInside_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Inside_BGM		2412240
+	810535998	Menu_BGM	D:\2024 Spring Semester Classes\VR & AR\Newer_VR_Git_Build\Game399_Final\Project\Project_WwiseProject\.cache\Mac\SFX\OrbitalDashMenuBGM_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu_BGM		7260876
+

@@ -22,32 +22,238 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="2204642885" Type="User" Language="SFX" Hash="{1D9BB1BF-326A-2E6D-F125-F9FB2A0A7EF4}">
-			<ShortName>Reactor</ShortName>
-			<Path>Reactor.bnk</Path>
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{A22080FA-2556-38DF-3F04-ABB0CBDF4C68}">
+			<ShortName>SFX_Soundbank</ShortName>
+			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
+				<File Id="31056" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GrappleSFX_06.wav</ShortName>
+					<CachePath>SFX/GrappleSFX_06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="78304184" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Out_Of_Oxy_Ambient.wav</ShortName>
+					<CachePath>SFX/Out_Of_Oxy_Ambient_818F3B66.wem</CachePath>
+				</File>
+				<File Id="100018216" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal_Slap_02.wav</ShortName>
+					<CachePath>SFX/Metal_Slap_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="208003472" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GrappleSFX_03.wav</ShortName>
+					<CachePath>SFX/GrappleSFX_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="208870057" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Oxy_Filled.wav</ShortName>
+					<CachePath>SFX/Oxy_Filled_818F3B66.wem</CachePath>
+				</File>
+				<File Id="222811510" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GrappleSFX_07.wav</ShortName>
+					<CachePath>SFX/GrappleSFX_07_818F3B66.wem</CachePath>
+				</File>
+				<File Id="268722404" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GrappleSFX_02.wav</ShortName>
+					<CachePath>SFX/GrappleSFX_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="294022196" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jetpack_Hiss.wav</ShortName>
+					<CachePath>SFX/Jetpack_Hiss_818F3B66.wem</CachePath>
+				</File>
+				<File Id="344497065" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Indicator_Reactor_Fixed.wav</ShortName>
+					<CachePath>SFX/Indicator_Reactor_Fixed_818F3B66.wem</CachePath>
+				</File>
+				<File Id="408832215" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GrappleSFX_05.wav</ShortName>
+					<CachePath>SFX/GrappleSFX_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="468360685" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hover_Off_UI_Button.wav</ShortName>
+					<CachePath>SFX/Hover_Off_UI_Button_818F3B66.wem</CachePath>
+				</File>
+				<File Id="534946321" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Clicked_UI_Button.wav</ShortName>
+					<CachePath>SFX/Clicked_UI_Button_818F3B66.wem</CachePath>
+				</File>
 				<File Id="616637430" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BrokenReactorSFX.wav</ShortName>
 					<CachePath>SFX/BrokenReactorSFX_11A93380.wem</CachePath>
 				</File>
+				<File Id="631990819" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GrappleSFX_01.wav</ShortName>
+					<CachePath>SFX/GrappleSFX_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="640756894" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hover_Over_UI_Button.wav</ShortName>
+					<CachePath>SFX/Hover_Over_UI_Button_818F3B66.wem</CachePath>
+				</File>
+				<File Id="645674109" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GrappleSFX_04.wav</ShortName>
+					<CachePath>SFX/GrappleSFX_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="697963241" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Out_Of_Oxy_Woosh.wav</ShortName>
+					<CachePath>SFX/Out_Of_Oxy_Woosh_818F3B66.wem</CachePath>
+				</File>
+				<File Id="887850507" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GrappleSFX_08.wav</ShortName>
+					<CachePath>SFX/GrappleSFX_08_818F3B66.wem</CachePath>
+				</File>
+				<File Id="945187700" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Low_Oxy_Warning.wav</ShortName>
+					<CachePath>SFX/Low_Oxy_Warning_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1000057711" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal_Slap.wav</ShortName>
+					<CachePath>SFX/Metal_Slap_818F3B66.wem</CachePath>
+				</File>
 				<File Id="1028807892" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ReactorSFX.wav</ShortName>
-					<CachePath>SFX/ReactorSFX_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/ReactorSFX_6884BFF0.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2901348110" Name="Play_BrokenReactorSFX" MaxAttenuation="100" DurationType="Infinite">
+				<Event Id="1891082781" Name="Out_Of_Oxygen_Ambient" DurationType="OneShot" DurationMin="60.081165" DurationMax="60.081165">
+					<MediaRefs>
+						<MediaRef Id="78304184"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2546328017" Name="Out_Of_Oxygen_Woosh" DurationType="OneShot" DurationMin="3.9999583" DurationMax="3.9999583">
+					<MediaRefs>
+						<MediaRef Id="697963241"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1398985945" Name="Play_Ambient_Broken_Reactor" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="616637430"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="623613221" Name="Play_ReactorSFX" MaxAttenuation="100" DurationType="Infinite">
+				<Event Id="1555987701" Name="Play_Ambient_Reactor" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="1028807892"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2382057926" Name="Play_Hand_Contact_01" DurationType="OneShot" DurationMin="0.14138322" DurationMax="0.14138322">
+					<MediaRefs>
+						<MediaRef Id="631990819"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2382057925" Name="Play_Hand_Contact_02" DurationType="OneShot" DurationMin="0.14138322" DurationMax="0.14138322">
+					<MediaRefs>
+						<MediaRef Id="268722404"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2382057924" Name="Play_Hand_Contact_03" DurationType="OneShot" DurationMin="0.12192744" DurationMax="0.12192744">
+					<MediaRefs>
+						<MediaRef Id="208003472"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2382057923" Name="Play_Hand_Contact_04" DurationType="OneShot" DurationMin="0.20417234" DurationMax="0.20417234">
+					<MediaRefs>
+						<MediaRef Id="645674109"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2382057922" Name="Play_Hand_Contact_05" DurationType="OneShot" DurationMin="0.1355102" DurationMax="0.1355102">
+					<MediaRefs>
+						<MediaRef Id="408832215"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2382057921" Name="Play_Hand_Contact_06" DurationType="OneShot" DurationMin="0.115827665" DurationMax="0.115827665">
+					<MediaRefs>
+						<MediaRef Id="31056"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2382057920" Name="Play_Hand_Contact_07" DurationType="OneShot" DurationMin="0.12471655" DurationMax="0.12471655">
+					<MediaRefs>
+						<MediaRef Id="222811510"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2382057935" Name="Play_Hand_Contact_08" DurationType="OneShot" DurationMin="0.121451244" DurationMax="0.121451244">
+					<MediaRefs>
+						<MediaRef Id="887850507"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4046988224" Name="Play_Jetpack_Hiss" DurationType="OneShot" DurationMin="4.749977" DurationMax="4.749977">
+					<MediaRefs>
+						<MediaRef Id="294022196"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4213574854" Name="Play_Low_Oxygen_Warning" DurationType="OneShot" DurationMin="7.203833" DurationMax="7.203833">
+					<MediaRefs>
+						<MediaRef Id="945187700"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="136522678" Name="Play_Metal_Slap_01" DurationType="OneShot" DurationMin="0.9996667" DurationMax="0.9996667">
+					<MediaRefs>
+						<MediaRef Id="1000057711"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="136522677" Name="Play_Metal_Slap_02" DurationType="OneShot" DurationMin="1.056" DurationMax="1.056">
+					<MediaRefs>
+						<MediaRef Id="100018216"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4024519181" Name="Play_Oxygen_Filled" DurationType="OneShot" DurationMin="5.982042" DurationMax="5.982042">
+					<MediaRefs>
+						<MediaRef Id="208870057"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1098601461" Name="Play_Reactor_Fixed_Indicator" DurationType="OneShot" DurationMin="0.9998186" DurationMax="0.9998186">
+					<MediaRefs>
+						<MediaRef Id="344497065"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1661558166" Name="Play_UI_Button_Click" DurationType="OneShot" DurationMin="0.50174606" DurationMax="0.50174606">
+					<MediaRefs>
+						<MediaRef Id="534946321"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3400169570" Name="Play_UI_Button_Hover_OFF" DurationType="OneShot" DurationMin="0.19263038" DurationMax="0.19263038">
+					<MediaRefs>
+						<MediaRef Id="468360685"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4085758564" Name="Play_UI_Button_Hover_ON" DurationType="OneShot" DurationMin="0.19263038" DurationMax="0.19263038">
+					<MediaRefs>
+						<MediaRef Id="640756894"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3589812408" Type="User" Language="SFX" Hash="{D2F6CF13-FF90-8A63-C0CE-091A18C356F6}">
+			<ShortName>Music_Soundbank</ShortName>
+			<Path>Music_Soundbank.bnk</Path>
+			<Media>
+				<File Id="519502798" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>OrbitalDashBGM.wav</ShortName>
+					<CachePath>SFX/OrbitalDashBGM_818F3B66.wem</CachePath>
+				</File>
+				<File Id="615325555" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>OrbitalDashInside.wav</ShortName>
+					<CachePath>SFX/OrbitalDashInside_818F3B66.wem</CachePath>
+				</File>
+				<File Id="810535998" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>OrbitalDashMenuBGM.wav</ShortName>
+					<CachePath>SFX/OrbitalDashMenuBGM_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1587063413" Name="Play_Inside_BGM" DurationType="OneShot" DurationMin="13.674286" DurationMax="13.674286">
+					<MediaRefs>
+						<MediaRef Id="615325555"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1876933864" Name="Play_Menu_BGM" DurationType="OneShot" DurationMin="41.160885" DurationMax="41.160885">
+					<MediaRefs>
+						<MediaRef Id="810535998"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2993185784" Name="Play_Outside_BGM" DurationType="OneShot" DurationMin="68.512695" DurationMax="68.512695">
+					<MediaRefs>
+						<MediaRef Id="519502798"/>
 					</MediaRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{39EB16F0-B868-B326-56A8-0E0740B09C99}</FileHash>
+	<FileHash>{955CA031-E6D8-60A7-A2B3-42912CE184C1}</FileHash>
 </SoundBanksInfo>

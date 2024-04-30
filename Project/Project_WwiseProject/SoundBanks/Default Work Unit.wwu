@@ -3,10 +3,38 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{A3D071E0-189E-4590-A050-ED40F61DA22B}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Reactor" ID="{A287A6E8-7A01-4DFF-A522-DC00200CDC19}">
+				<SoundBank Name="SFX_Soundbank" ID="{FA697579-F909-48E5-BCE1-9A163A40BEA7}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_ReactorSFX" ID="{1BF371B4-D2F3-4930-98A6-D579FBF14B3E}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_BrokenReactorSFX" ID="{63DBC951-22DE-493F-8A98-6CBFADFA0CE9}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Hand_Contact_06" ID="{34D2B4E6-C1B5-4066-929A-32832D120B3B}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Hand_Contact_08" ID="{7C32DB4D-E279-438F-B946-9ABD9E8207EA}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Out_Of_Oxygen_Woosh" ID="{4F6B0803-8A3C-43AD-9AFA-24F1C90079AF}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Out_Of_Oxygen_Ambient" ID="{6237845E-C341-43E1-B778-73F78F6B4BB3}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ambient_Broken_Reactor" ID="{0EDBB9CF-3D56-441B-9805-40488B122A61}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Hand_Contact_03" ID="{10EDDFDA-4151-4521-835B-643789FBB9FF}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Hand_Contact_07" ID="{B97241A9-A6FE-452C-B6E4-9AFDB8E416AE}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Hand_Contact_04" ID="{A081ADB1-F02A-4586-814E-CF46801C2BD7}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_UI_Button_Hover_OFF" ID="{E9D2806E-D64A-45AE-BBDC-780461274C6D}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Hand_Contact_01" ID="{12D13617-4CC0-46CB-9131-8B0ED1641F01}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_UI_Button_Hover_ON" ID="{824C4B1A-70C2-472B-B5D5-F7849720A3F1}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Jetpack_Hiss" ID="{6554FC55-C711-4743-9F37-DE93BB150706}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Hand_Contact_05" ID="{4B1A4226-8481-4765-A9EA-821A48D76019}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Metal_Slap_01" ID="{01CB5CEE-E144-488F-A1A1-ABA96A446C56}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Hand_Contact_02" ID="{DEBE257F-1ADD-49B3-A1AD-9D3E81F7CD44}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ambient_Reactor" ID="{D1F9EE60-A78A-4AE4-B517-D9E3C4A5E767}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Oxygen_Filled" ID="{06A3B5C6-7015-4B18-A900-F65C2E90A963}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_UI_Button_Click" ID="{55259719-250C-4D56-8C30-164A25114C1F}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Reactor_Fixed_Indicator" ID="{90C8CCD8-F6EC-4EDE-AEB7-D8DAD01CA415}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Metal_Slap_02" ID="{991D7AAA-1D08-4EEC-9B38-AF60836E98DD}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Low_Oxygen_Warning" ID="{A1DE060E-DDCD-4FFA-AF17-7F0B427108B6}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Music_Soundbank" ID="{144805BF-959A-4549-AA35-2D06F1752C0D}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Menu_BGM" ID="{6BF51E63-CBDE-413C-A80C-4D0147894896}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Outside_BGM" ID="{9EDD5140-97BB-4930-8E0C-A3E73A3AB4A6}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Inside_BGM" ID="{C3C5D14D-FAB9-499E-A229-7A189833F25B}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

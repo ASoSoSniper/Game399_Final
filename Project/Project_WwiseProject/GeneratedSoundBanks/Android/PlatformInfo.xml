@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PlatformInfo>
-	<Platform Name="Android" BasePlatform="Android" Generator="2023.1.3.8471"/>
+	<Platform Name="Android" BasePlatform="Android" Generator="2023.1.2.8444"/>
 	<RootPaths>
 		<ProjectRoot>../..</ProjectRoot>
 		<SourceFilesRoot>../../.cache/Android</SourceFilesRoot>
@@ -28,5 +28,5 @@
 		<PrintObjectGuid>false</PrintObjectGuid>
 		<PrintObjectPath>false</PrintObjectPath>
 	</Settings>
-	<FileHash>{08687A93-E53A-63DA-61C1-5E40848FEFDD}</FileHash>
+	<FileHash>{513FEB9A-5E9D-93C3-22DC-F7BDBE4CA507}</FileHash>
 </PlatformInfo>
