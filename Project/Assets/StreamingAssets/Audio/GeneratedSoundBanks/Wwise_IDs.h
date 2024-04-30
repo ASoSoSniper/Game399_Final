@@ -39,6 +39,23 @@ namespace AK
         static const AkUniqueID PLAY_UI_BUTTON_HOVER_ON = 4085758564U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace STATE_GROUP
+        {
+            static const AkUniqueID GROUP = 3600723340U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID STATE_01 = 3794091078U;
+                static const AkUniqueID STATE_02 = 3794091077U;
+                static const AkUniqueID STATE_03 = 3794091076U;
+            } // namespace STATE
+        } // namespace STATE_GROUP
+
+    } // namespace STATES
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;

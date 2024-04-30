@@ -42,5 +42,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	887850507	Hand_Grapple_08	D:\2024 Spring Semester Classes\VR & AR\Newer_VR_Git_Build\Game399_Final\Project\Project_WwiseProject\.cache\Windows\SFX\GrappleSFX_08_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hand_Grapple_08		21520
 	945187700	Low_Oxygen_Warning	D:\2024 Spring Semester Classes\VR & AR\Newer_VR_Git_Build\Game399_Final\Project\Project_WwiseProject\.cache\Windows\SFX\Low_Oxy_Warning_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Low_Oxygen_Warning		691664
 	1000057711	Metal_Slap_01	D:\2024 Spring Semester Classes\VR & AR\Newer_VR_Git_Build\Game399_Final\Project\Project_WwiseProject\.cache\Windows\SFX\Metal_Slap_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Metal_Slap_01		96064
-	1028807892	ReactorSFX	D:\2024 Spring Semester Classes\VR & AR\Newer_VR_Git_Build\Game399_Final\Project\Project_WwiseProject\.cache\Windows\SFX\ReactorSFX_6884BFF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\ReactorSFX		1882792
+	1028807892	ReactorSFX	D:\2024 Spring Semester Classes\VR & AR\Newer_VR_Git_Build\Game399_Final\Project\Project_WwiseProject\.cache\Windows\SFX\ReactorSFX_B9462D96.wem		\Actor-Mixer Hierarchy\Default Work Unit\ReactorSFX		1882792
 

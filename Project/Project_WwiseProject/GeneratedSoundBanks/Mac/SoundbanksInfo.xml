@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D326F752-7CA2-0A14-FDB1-63ECE89D0199}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D99063AC-B172-1142-203F-15947B2E0384}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -21,8 +21,18 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<StateGroups>
+				<StateGroup Id="3600723340" Name="State_Group">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="3794091076" Name="State_03"/>
+						<State Id="3794091077" Name="State_02"/>
+						<State Id="3794091078" Name="State_01"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{A22080FA-2556-38DF-3F04-ABB0CBDF4C68}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{E44E4FB9-0F81-C2D4-9816-E314CAFEF9CE}">
 			<ShortName>SFX_Soundbank</ShortName>
 			<Path>SFX_Soundbank.bnk</Path>
 			<Media>
@@ -108,7 +118,7 @@
 				</File>
 				<File Id="1028807892" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ReactorSFX.wav</ShortName>
-					<CachePath>SFX/ReactorSFX_6884BFF0.wem</CachePath>
+					<CachePath>SFX/ReactorSFX_B9462D96.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -122,12 +132,12 @@
 						<MediaRef Id="697963241"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1398985945" Name="Play_Ambient_Broken_Reactor" MaxAttenuation="100" DurationType="Infinite">
+				<Event Id="1398985945" Name="Play_Ambient_Broken_Reactor" MaxAttenuation="10" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="616637430"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1555987701" Name="Play_Ambient_Reactor" MaxAttenuation="100" DurationType="Infinite">
+				<Event Id="1555987701" Name="Play_Ambient_Reactor" MaxAttenuation="10" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="1028807892"/>
 					</MediaRefs>
@@ -255,5 +265,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{26289D49-951B-F5DE-2F13-FBC2A727F861}</FileHash>
+	<FileHash>{5FB777C2-F5B4-7E46-1489-771F4D6213C5}</FileHash>
 </SoundBanksInfo>
