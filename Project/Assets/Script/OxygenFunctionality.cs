@@ -13,6 +13,8 @@ public class OxygenFunctionality : MonoBehaviour
     public Image oxygenProgressBar;
     public TMP_Text NumberDisplay;
     public GameObject LoseText;
+    public GameObject Player;
+    ClimberHand[] handsList;
 
 
     // Start is called before the first frame update
@@ -20,6 +22,8 @@ public class OxygenFunctionality : MonoBehaviour
     {
         oxygenAmount = maxOxygen;
         LoseText.SetActive(false);
+        Player = GameObject.Find("Climber");
+        handsList = FindObjectsOfType<ClimberHand>();
     }
 
     // Update is called once per frame
@@ -43,7 +47,11 @@ public class OxygenFunctionality : MonoBehaviour
         {
             NumberDisplay.text = "0 / " + maxOxygen.ToString();
             LoseText.SetActive(true);
-
+            Player.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            for (int i = 0; i < handsList.Length; i++)
+            {
+                handsList[i].enabled = false;
+            }
         }
     }
 
