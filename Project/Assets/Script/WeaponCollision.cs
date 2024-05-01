@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WeaponCollision : MonoBehaviour
 {
-    MeleeWeapon weapon;
+    [SerializeField] MeleeWeapon weapon;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +16,7 @@ public class WeaponCollision : MonoBehaviour
     {
         if (!weapon) return;
 
-        if (weapon.spaceVelocity.magnitude >= weapon.hitVelocity)
+        if (weapon.spaceRotation.magnitude >= weapon.hitRotation)
         {
             weapon.HitObject(other);
         }

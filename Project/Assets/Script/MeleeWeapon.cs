@@ -16,7 +16,8 @@ public class MeleeWeapon : MonoBehaviour
 
     [HideInInspector] public Vector3 spaceVelocity = Vector3.zero;
     public float hitVelocity = 300f;
-    Vector3 spaceRotation;
+    public float hitRotation = 80f;
+    [HideInInspector] public Vector3 spaceRotation;
 
     Vector3 initPos;
     Quaternion initRot;
@@ -52,14 +53,14 @@ public class MeleeWeapon : MonoBehaviour
 
         lastPosition = transform.position;
         lastRotation = transform.rotation;
-
-        if (spaceVelocity.magnitude >= hitVelocity)
+        Debug.Log("Velocity = " + spaceVelocity.magnitude + ", Rotation = " + spaceRotation.magnitude);
+        if (spaceRotation.magnitude >= hitRotation)
         {
-            if (normalMat) mesh.material = normalMat;
+            if (hitMat) mesh.material = hitMat;
         }
         else
         {
-            if (hitMat) mesh.material = hitMat;
+            if (normalMat) mesh.material = normalMat;
         }
     }
 
