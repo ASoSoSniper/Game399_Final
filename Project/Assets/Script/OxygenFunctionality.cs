@@ -14,7 +14,7 @@ public class OxygenFunctionality : MonoBehaviour
     public TMP_Text NumberDisplay;
     public GameObject LoseText;
     public GameObject Player;
-    ClimberHand[] handsList;
+    private ClimberHand[] handsList;
 
 
     // Start is called before the first frame update
@@ -46,12 +46,15 @@ public class OxygenFunctionality : MonoBehaviour
         else
         {
             NumberDisplay.text = "0 / " + maxOxygen.ToString();
-            LoseText.SetActive(true);
-            Player.GetComponent<Rigidbody>().velocity = Vector3.zero;
-            for (int i = 0; i < handsList.Length; i++)
+            if (LoseText != null && Player != null)
             {
-                handsList[i].enabled = false;
-            }
+                LoseText.SetActive(true);
+                Player.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                for (int i = 0; i < handsList.Length; i++)
+                {
+                    handsList[i].enabled = false;
+                }
+            }            
         }
     }
 
