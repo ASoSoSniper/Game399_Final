@@ -12,12 +12,14 @@ public class OxygenFunctionality : MonoBehaviour
     public float oxygenTick = 0.001f;
     public Image oxygenProgressBar;
     public TMP_Text NumberDisplay;
+    public GameObject LoseText;
 
 
     // Start is called before the first frame update
     void Start()
     {
         oxygenAmount = maxOxygen;
+        LoseText.SetActive(false);
     }
 
     // Update is called once per frame
@@ -40,6 +42,8 @@ public class OxygenFunctionality : MonoBehaviour
         else
         {
             NumberDisplay.text = "0 / " + maxOxygen.ToString();
+            LoseText.SetActive(true);
+
         }
     }
 
