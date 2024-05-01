@@ -53,7 +53,7 @@ public class MeleeWeapon : MonoBehaviour
 
         lastPosition = transform.position;
         lastRotation = transform.rotation;
-        Debug.Log("Velocity = " + spaceVelocity.magnitude + ", Rotation = " + spaceRotation.magnitude);
+        //Debug.Log("Velocity = " + spaceVelocity.magnitude + ", Rotation = " + spaceRotation.magnitude);
         if (spaceRotation.magnitude >= hitRotation)
         {
             if (hitMat) mesh.material = hitMat;

@@ -14,14 +14,13 @@ public class OxygenFunctionality : MonoBehaviour
     public TMP_Text NumberDisplay;
     public GameObject LoseText;
     public GameObject Player;
-    private ClimberHand[] handsList;
-
+    public ClimberHand[] handsList;
 
     // Start is called before the first frame update
     void Start()
     {
         oxygenAmount = maxOxygen;
-        LoseText.SetActive(false);
+        if (LoseText) LoseText.SetActive(false);
         Player = GameObject.Find("Climber");
         handsList = FindObjectsOfType<ClimberHand>();
     }
@@ -45,21 +44,23 @@ public class OxygenFunctionality : MonoBehaviour
         }
         else
         {
-            NumberDisplay.text = "0 / " + maxOxygen.ToString();
-            if (LoseText != null && Player != null)
-            {
-                LoseText.SetActive(true);
-                Player.GetComponent<Rigidbody>().velocity = Vector3.zero;
-                for (int i = 0; i < handsList.Length; i++)
-                {
-                    handsList[i].enabled = false;
-                }
-            }            
+            KillPlayer();
         }
     }
 
     public void GainOxygen(float oxygen)
     {
         oxygenAmount = Mathf.Clamp(oxygenAmount + oxygen, 0f, maxOxygen);
+    }
+
+    public void KillPlayer()
+    {
+        NumberDisplay.text = "0 / " + maxOxygen.ToString();
+        if (LoseText) LoseText.SetActive(true);
+        Player.GetComponent<Rigidbody>().velocity = Vector3.zero;
+        for (int i = 0; i < handsList.Length; i++)
+        {
+            handsList[i].enabled = false;
+        }
     }
 }
