@@ -108,7 +108,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6b136f46a09225479a8dec645cd6f39d
     GuidInternal: 
-    m_lastTime: -8584870287475439998
+    m_lastTime: -8584870175742085563
     List:
     - name: Out_Of_Oxygen_Ambient
       guid: 5e84376241c3e143b77873f78f6b4bb3
@@ -448,8 +448,8 @@ MonoBehaviour:
         guid: 4051dd9ebb9730498e0ca3e73a3ab4a6
       Path: Events\Default Work Unit\Play_Outside_BGM
       maxAttenuation: 0
-      maxDuration: 68.512695
-      minDuration: 68.512695
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Oxygen_Filled
       guid: c6b5a3061570184ba900f65c2e90a963
       id: 4024519181
@@ -535,6 +535,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.19263038
       minDuration: 0.19263038
+    - name: Stop_OutsideBGM
+      guid: 03e57316d6fa9a40ba5da8ea2b2b8ebf
+      id: 1430273829
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6b136f46a09225479a8dec645cd6f39d
+      - ElementName: Stop_OutsideBGM
+        ObjectType: 3
+        guid: 03e57316d6fa9a40ba5da8ea2b2b8ebf
+      Path: Events\Default Work Unit\Stop_OutsideBGM
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -561,7 +578,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: b63dcce16997d44f99a91add151b3206
     GuidInternal: 
-    m_lastTime: -8584870287465279910
+    m_lastTime: -8584870199105495117
     List:
     - name: State_Group
       guid: 86159e6bb549684ba3aed4eb4f13a73a
@@ -674,7 +691,7 @@ MonoBehaviour:
     m_lastTime: -8584871781940556607
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000021000000220000002300000084000000f2000000f3000000
+  ExpandedWaapiItemIds: 050000000600000007000000220000002300000084000000f2000000f3000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -250,7 +250,7 @@
 						<Action Name="" ID="{AC1CC2C2-1807-4E96-BEF5-0E03F47D1903}" ShortID="289647783">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Outside_BGM" ID="{E813B962-A49E-46D9-B07E-088CF72A3C23}" WorkUnitID="{B54BF390-0933-49F6-993C-69A44CB46CBF}"/>
+									<ObjectRef Name="Playlist_03" ID="{5053EFE0-65BF-45D3-AB9C-129CE6805505}" WorkUnitID="{E6D330DA-106D-49E7-9B42-89FD1F1FCFE7}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -273,6 +273,20 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Music" ID="{20BF9327-06C6-49D4-AF04-3C9653906187}" WorkUnitID="{E6D330DA-106D-49E7-9B42-89FD1F1FCFE7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_OutsideBGM" ID="{1673E503-FAD6-409A-BA5D-A8EA2B2B8EBF}">
+					<ChildrenList>
+						<Action Name="" ID="{75EB25B6-F344-4C08-B7EA-4C86AA3B4A1C}" ShortID="174614833">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Playlist_03" ID="{5053EFE0-65BF-45D3-AB9C-129CE6805505}" WorkUnitID="{E6D330DA-106D-49E7-9B42-89FD1F1FCFE7}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

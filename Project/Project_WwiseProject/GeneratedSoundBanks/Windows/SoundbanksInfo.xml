@@ -229,13 +229,13 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3589812408" Type="User" Language="SFX" Hash="{D2F6CF13-FF90-8A63-C0CE-091A18C356F6}">
+		<SoundBank Id="3589812408" Type="User" Language="SFX" Hash="{82E5965B-8F8B-5CC2-9390-8204E79D4AC0}">
 			<ShortName>Music_Soundbank</ShortName>
 			<Path>Music_Soundbank.bnk</Path>
 			<Media>
-				<File Id="519502798" Language="SFX" Streaming="false" Location="Memory">
+				<File Id="511979077" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>OrbitalDashBGM.wav</ShortName>
-					<CachePath>SFX/OrbitalDashBGM_818F3B66.wem</CachePath>
+					<CachePath>SFX/OrbitalDashBGM_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="615325555" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>OrbitalDashInside.wav</ShortName>
@@ -257,13 +257,13 @@
 						<MediaRef Id="810535998"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2993185784" Name="Play_Outside_BGM" DurationType="OneShot" DurationMin="68.512695" DurationMax="68.512695">
+				<Event Id="2993185784" Name="Play_Outside_BGM" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<MediaRefs>
-						<MediaRef Id="519502798"/>
+						<MediaRef Id="511979077"/>
 					</MediaRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{714EFA08-3C43-3621-8563-DD658533C770}</FileHash>
+	<FileHash>{E369DE68-D5BE-34C7-22BD-EE77C36051AA}</FileHash>
 </SoundBanksInfo>
