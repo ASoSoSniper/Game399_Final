@@ -1056,6 +1056,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4842058578090550302, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842058578090550302, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7df3e8b5e15fd9c40a8df81bc84fc29f, type: 3}
     - target: {fileID: 7198870657353622085, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1067,6 +1075,10 @@ PrefabInstance:
     - target: {fileID: 7371135411760216387, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
       propertyPath: m_Name
       value: Hand Movement
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067540870908344315, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
+      propertyPath: m_fontSize
+      value: 26.85
       objectReference: {fileID: 0}
     - target: {fileID: 9140458866629030630, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1108,6 +1120,7 @@ PrefabInstance:
     - {fileID: 3299776776290917362, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
     - {fileID: 5158427460206405031, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
     - {fileID: 6329458746995754181, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
+    - {fileID: 7781544102222272724, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2329910476358020618, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
       insertIndex: -1
