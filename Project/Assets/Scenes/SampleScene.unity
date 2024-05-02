@@ -3836,9 +3836,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 383030521693805042, guid: 8f11004d8c58b9b4face798ec9830a62, type: 3}
+      propertyPath: waypointImage
+      value: 
+      objectReference: {fileID: 2023634754}
+    - target: {fileID: 383030521693805042, guid: 8f11004d8c58b9b4face798ec9830a62, type: 3}
+      propertyPath: waypointTransform
+      value: 
+      objectReference: {fileID: 2106287810}
     - target: {fileID: 4142460691047854597, guid: 8f11004d8c58b9b4face798ec9830a62, type: 3}
       propertyPath: m_Name
       value: Climber
+      objectReference: {fileID: 0}
+    - target: {fileID: 5020180136891653064, guid: 8f11004d8c58b9b4face798ec9830a62, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8013038913885834478, guid: 8f11004d8c58b9b4face798ec9830a62, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3880,38 +3892,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8252435178201219106, guid: 8f11004d8c58b9b4face798ec9830a62, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8975073827456490980, guid: 8f11004d8c58b9b4face798ec9830a62, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1784384259}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f11004d8c58b9b4face798ec9830a62, type: 3}
 --- !u!1 &1730181972 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4142460691047854597, guid: 8f11004d8c58b9b4face798ec9830a62, type: 3}
   m_PrefabInstance: {fileID: 1730181971}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1784384257 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8975073827456490980, guid: 8f11004d8c58b9b4face798ec9830a62, type: 3}
-  m_PrefabInstance: {fileID: 1730181971}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1784384259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1784384257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b3e9ff8910dd2c46b624667f301c04f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointImage: {fileID: 2023634754}
-  waypointTransform: {fileID: 2106287810}
 --- !u!1001 &1807150937
 PrefabInstance:
   m_ObjectHideFlags: 0
