@@ -76,11 +76,22 @@ public class Climber : MonoBehaviour
 
     void ToggleGrabMode(bool active)
     {
+        if (capsuleCollider.enabled == active)
+        {
+            if (!capsuleCollider.enabled)
+            {
+                if (!SphereCheck())
+                    capsuleCollider.enabled = true;
+            }
+            else
+            {
+                capsuleCollider.enabled = false;
+            }
+        }
+
         if (active == inGrabMode) return;
 
         controller.enabled = active;
-
-        capsuleCollider.enabled = !active;
 
         inGrabMode = active;
 
@@ -91,7 +102,6 @@ public class Climber : MonoBehaviour
         else
         {
             rigidBody.AddForce(spaceVelocity, ForceMode.Impulse);
-            //rigidBody.velocity = spaceVelocity;
         }
     }
 
@@ -100,5 +110,20 @@ public class Climber : MonoBehaviour
         ClearHand();
         transform.position = initialPos;
         rigidBody.velocity = Vector3.zero;
+    }
+
+    bool SphereCheck()
+    {
+        RaycastHit[] hits = Physics.SphereCastAll(transform.position, capsuleCollider.radius, transform.forward);
+
+        for (int i = 0; i < hits.Length; i++)
+        {
+            if (!hits[i].collider.CompareTag("Player"))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }
