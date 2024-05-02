@@ -852,6 +852,14 @@ PrefabInstance:
       propertyPath: m_LeftHandSnapTurnAction.m_UseReference
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2106944037302871603, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106944037302871603, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 38d12bc7b8669504799d11ef0821ba6d, type: 3}
     - target: {fileID: 2329910476358020618, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.001
@@ -959,6 +967,10 @@ PrefabInstance:
     - target: {fileID: 3573474708845165631, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
       propertyPath: wristMenu
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3689512975030238087, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
+      propertyPath: m_fontSize
+      value: 26.85
       objectReference: {fileID: 0}
     - target: {fileID: 4030374423873770513, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
       propertyPath: m_ModelParent
@@ -1095,6 +1107,7 @@ PrefabInstance:
     - {fileID: 7953372517417945670, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
     - {fileID: 3299776776290917362, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
     - {fileID: 5158427460206405031, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
+    - {fileID: 6329458746995754181, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2329910476358020618, guid: 0907886b2b0460543a2f0d3bd72b73de, type: 3}
       insertIndex: -1
