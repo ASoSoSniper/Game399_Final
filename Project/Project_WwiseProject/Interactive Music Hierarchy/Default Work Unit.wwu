@@ -300,6 +300,11 @@
 								<MusicSegment Name="Segment03" ID="{7CC0524D-7457-4372-9627-0AE3E396A2BA}" ShortID="1047387443">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="68512.6984126984"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -357,6 +362,17 @@
 																				</MusicClip>
 																			</Local>
 																		</Reference>
+																		<Reference>
+																			<Local>
+																				<MusicEventCue Name="" ID="{6FF4078E-E7C6-4EAA-AAD7-FAEB8810581B}" ShortID="233647069">
+																					<ReferenceList>
+																						<Reference Name="PostEventTarget">
+																							<ObjectRef Name="BGM_Outside_On" ID="{7A726908-D8C7-43BA-BBAD-D4F593AECFC5}" WorkUnitID="{466F136B-92A0-4725-9A8D-EC645CD6F39D}"/>
+																						</Reference>
+																					</ReferenceList>
+																				</MusicEventCue>
+																			</Local>
+																		</Reference>
 																	</ObjectList>
 																</ObjectLists>
 															</MusicTrackSequence>
@@ -392,28 +408,24 @@
 					<StateInfo>
 						<StateGroupList>
 							<StateGroupInfo>
-								<StateGroupRef Name="State_Group" ID="{6B9E1586-49B5-4B68-A3AE-D4EB4F13A73A}"/>
+								<StateGroupRef Name="BGM_Outside" ID="{6B9E1586-49B5-4B68-A3AE-D4EB4F13A73A}"/>
 							</StateGroupInfo>
 						</StateGroupList>
 						<CustomStateList>
 							<CustomState>
-								<StateRef Name="State_02" ID="{3C05F256-970C-4848-A35E-126932485743}"/>
+								<StateRef Name="State_Off" ID="{3C05F256-970C-4848-A35E-126932485743}"/>
 								<CustomState Name="" ID="{098E60E7-F592-42E3-A1ED-73ACB5B95C38}" ShortID="699252685"/>
 							</CustomState>
 							<CustomState>
-								<StateRef Name="State_01" ID="{AE07CE31-2BF7-489F-95A6-30E5E4B9575C}"/>
+								<StateRef Name="State_On" ID="{AE07CE31-2BF7-489F-95A6-30E5E4B9575C}"/>
 								<CustomState Name="" ID="{1F345E74-51A6-42EF-B154-F910D2066F79}" ShortID="287524181"/>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="State_03" ID="{94DE4446-B799-4C2B-BDF3-892B64A47814}"/>
-								<CustomState Name="" ID="{6F2DDCC1-FB2D-4A06-9890-AECF4B63054C}" ShortID="530058013"/>
 							</CustomState>
 						</CustomStateList>
 					</StateInfo>
 					<ObjectLists>
 						<ObjectList Name="Arguments">
 							<Reference>
-								<ObjectRef Name="State_Group" ID="{6B9E1586-49B5-4B68-A3AE-D4EB4F13A73A}" WorkUnitID="{E1CC3DB6-9769-4FD4-99A9-1ADD151B3206}"/>
+								<ObjectRef Name="BGM_Outside" ID="{6B9E1586-49B5-4B68-A3AE-D4EB4F13A73A}" WorkUnitID="{E1CC3DB6-9769-4FD4-99A9-1ADD151B3206}"/>
 							</Reference>
 						</ObjectList>
 						<ObjectList Name="Entries">
@@ -428,7 +440,7 @@
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="State_01" ID="{AE07CE31-2BF7-489F-95A6-30E5E4B9575C}" WorkUnitID="{E1CC3DB6-9769-4FD4-99A9-1ADD151B3206}"/>
+													<ObjectRef Name="State_On" ID="{AE07CE31-2BF7-489F-95A6-30E5E4B9575C}" WorkUnitID="{E1CC3DB6-9769-4FD4-99A9-1ADD151B3206}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -446,7 +458,7 @@
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="State_02" ID="{3C05F256-970C-4848-A35E-126932485743}" WorkUnitID="{E1CC3DB6-9769-4FD4-99A9-1ADD151B3206}"/>
+													<ObjectRef Name="State_Off" ID="{3C05F256-970C-4848-A35E-126932485743}" WorkUnitID="{E1CC3DB6-9769-4FD4-99A9-1ADD151B3206}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -461,13 +473,6 @@
 												<ObjectRef Name="Playlist_03" ID="{5053EFE0-65BF-45D3-AB9C-129CE6805505}" WorkUnitID="{E6D330DA-106D-49E7-9B42-89FD1F1FCFE7}"/>
 											</Reference>
 										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="State_03" ID="{94DE4446-B799-4C2B-BDF3-892B64A47814}" WorkUnitID="{E1CC3DB6-9769-4FD4-99A9-1ADD151B3206}"/>
-												</Reference>
-											</ObjectList>
-										</ObjectLists>
 									</MultiSwitchEntry>
 								</Local>
 							</Reference>

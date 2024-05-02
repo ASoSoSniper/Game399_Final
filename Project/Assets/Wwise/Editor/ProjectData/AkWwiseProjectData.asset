@@ -108,8 +108,110 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6b136f46a09225479a8dec645cd6f39d
     GuidInternal: 
-    m_lastTime: -8584870105080022804
+    m_lastTime: -8584869288121824476
     List:
+    - name: BGM_Inside_Off
+      guid: 695553f207002b4a914caaeebdac939d
+      id: 542198874
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6b136f46a09225479a8dec645cd6f39d
+      - ElementName: BGM_Inside_Off
+        ObjectType: 3
+        guid: 695553f207002b4a914caaeebdac939d
+      Path: Events\Default Work Unit\BGM_Inside_Off
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: BGM_Inside_On
+      guid: 8e3bdf285a5ef9418b6977d5b9c742a6
+      id: 168368220
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6b136f46a09225479a8dec645cd6f39d
+      - ElementName: BGM_Inside_On
+        ObjectType: 3
+        guid: 8e3bdf285a5ef9418b6977d5b9c742a6
+      Path: Events\Default Work Unit\BGM_Inside_On
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: BGM_Menu_Off
+      guid: de0ed3b186eb234798896e8b60ac2270
+      id: 3769481927
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6b136f46a09225479a8dec645cd6f39d
+      - ElementName: BGM_Menu_Off
+        ObjectType: 3
+        guid: de0ed3b186eb234798896e8b60ac2270
+      Path: Events\Default Work Unit\BGM_Menu_Off
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: BGM_Menu_On
+      guid: 5bcadf5124fd634a8fd17633fb13cd83
+      id: 1038009203
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6b136f46a09225479a8dec645cd6f39d
+      - ElementName: BGM_Menu_On
+        ObjectType: 3
+        guid: 5bcadf5124fd634a8fd17633fb13cd83
+      Path: Events\Default Work Unit\BGM_Menu_On
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: BGM_Outside_Off
+      guid: f87f33a3500a9d499b90acde95b08900
+      id: 2784816431
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6b136f46a09225479a8dec645cd6f39d
+      - ElementName: BGM_Outside_Off
+        ObjectType: 3
+        guid: f87f33a3500a9d499b90acde95b08900
+      Path: Events\Default Work Unit\BGM_Outside_Off
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: BGM_Outside_On
+      guid: 0869727ac7d8ba43bbadd4f593aecfc5
+      id: 1688670011
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6b136f46a09225479a8dec645cd6f39d
+      - ElementName: BGM_Outside_On
+        ObjectType: 3
+        guid: 0869727ac7d8ba43bbadd4f593aecfc5
+      Path: Events\Default Work Unit\BGM_Outside_On
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Out_Of_Oxygen_Ambient
       guid: 5e84376241c3e143b77873f78f6b4bb3
       id: 1891082781
@@ -578,11 +680,11 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: b63dcce16997d44f99a91add151b3206
     GuidInternal: 
-    m_lastTime: -8584870184896522481
+    m_lastTime: -8584869293420757391
     List:
-    - name: State_Group
+    - name: BGM_Outside
       guid: 86159e6bb549684ba3aed4eb4f13a73a
-      id: 3600723340
+      id: 1206170669
       PathAndIcons:
       - ElementName: States
         ObjectType: 5
@@ -590,10 +692,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: b63dcce16997d44f99a91add151b3206
-      - ElementName: State_Group
+      - ElementName: BGM_Outside
         ObjectType: 9
         guid: 86159e6bb549684ba3aed4eb4f13a73a
-      Path: States\Default Work Unit\State_Group
+      Path: States\Default Work Unit\BGM_Outside
       values:
       - name: None
         guid: 9162453c5f9b1a4eb249194f73ce97f6
@@ -605,31 +707,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: b63dcce16997d44f99a91add151b3206
-        - ElementName: State_Group
+        - ElementName: BGM_Outside
           ObjectType: 9
           guid: 86159e6bb549684ba3aed4eb4f13a73a
         - ElementName: None
           ObjectType: 8
           guid: 9162453c5f9b1a4eb249194f73ce97f6
-      - name: State_01
-        guid: 31ce07aef72b9f4895a630e5e4b9575c
-        id: 3794091078
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: b63dcce16997d44f99a91add151b3206
-        - ElementName: State_Group
-          ObjectType: 9
-          guid: 86159e6bb549684ba3aed4eb4f13a73a
-        - ElementName: State_01
-          ObjectType: 8
-          guid: 31ce07aef72b9f4895a630e5e4b9575c
-      - name: State_02
+      - name: State_Off
         guid: 56f2053c0c974848a35e126932485743
-        id: 3794091077
+        id: 273267510
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -637,15 +723,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: b63dcce16997d44f99a91add151b3206
-        - ElementName: State_Group
+        - ElementName: BGM_Outside
           ObjectType: 9
           guid: 86159e6bb549684ba3aed4eb4f13a73a
-        - ElementName: State_02
+        - ElementName: State_Off
           ObjectType: 8
           guid: 56f2053c0c974848a35e126932485743
-      - name: State_03
-        guid: 4644de9499b72b4cbdf3892b64a47814
-        id: 3794091076
+      - name: State_On
+        guid: 31ce07aef72b9f4895a630e5e4b9575c
+        id: 656779640
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -653,12 +739,12 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: b63dcce16997d44f99a91add151b3206
-        - ElementName: State_Group
+        - ElementName: BGM_Outside
           ObjectType: 9
           guid: 86159e6bb549684ba3aed4eb4f13a73a
-        - ElementName: State_03
+        - ElementName: State_On
           ObjectType: 8
-          guid: 4644de9499b72b4cbdf3892b64a47814
+          guid: 31ce07aef72b9f4895a630e5e4b9575c
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -691,7 +777,7 @@ MonoBehaviour:
     m_lastTime: -8584870184896512505
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000220000002300000084000000f2000000f3000000
+  ExpandedWaapiItemIds: 05000000060000000700000022000000230000002b0000002c00000084000000f2000000f3000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

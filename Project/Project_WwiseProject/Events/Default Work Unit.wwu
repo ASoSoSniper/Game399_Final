@@ -292,6 +292,90 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="BGM_Outside_On" ID="{7A726908-D8C7-43BA-BBAD-D4F593AECFC5}">
+					<ChildrenList>
+						<Action Name="" ID="{4E167AB9-47FA-45DE-AE94-1D41C6AED2ED}" ShortID="879128432">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="State_On" ID="{AE07CE31-2BF7-489F-95A6-30E5E4B9575C}" WorkUnitID="{E1CC3DB6-9769-4FD4-99A9-1ADD151B3206}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BGM_Outside_Off" ID="{A3337FF8-0A50-499D-9B90-ACDE95B08900}">
+					<ChildrenList>
+						<Action Name="" ID="{DC2E72D3-30BF-4645-A0E9-5DD904A0C902}" ShortID="484237751">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="State_Off" ID="{3C05F256-970C-4848-A35E-126932485743}" WorkUnitID="{E1CC3DB6-9769-4FD4-99A9-1ADD151B3206}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BGM_Inside_On" ID="{28DF3B8E-5E5A-41F9-8B69-77D5B9C742A6}">
+					<ChildrenList>
+						<Action Name="" ID="{99E9E488-F48F-47C7-9DC4-9ED8B80E0822}" ShortID="1028289022">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="State_On" ID="{AE07CE31-2BF7-489F-95A6-30E5E4B9575C}" WorkUnitID="{E1CC3DB6-9769-4FD4-99A9-1ADD151B3206}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BGM_Inside_Off" ID="{F2535569-0007-4A2B-914C-AAEEBDAC939D}">
+					<ChildrenList>
+						<Action Name="" ID="{78A6C0D8-D5A9-40C3-9EDA-28374E060EE9}" ShortID="444869678">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="State_Off" ID="{3C05F256-970C-4848-A35E-126932485743}" WorkUnitID="{E1CC3DB6-9769-4FD4-99A9-1ADD151B3206}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BGM_Menu_On" ID="{51DFCA5B-FD24-4A63-8FD1-7633FB13CD83}">
+					<ChildrenList>
+						<Action Name="" ID="{616E5F04-B78F-4FC4-8E8F-FBB8F6561B48}" ShortID="478377798">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="State_On" ID="{AE07CE31-2BF7-489F-95A6-30E5E4B9575C}" WorkUnitID="{E1CC3DB6-9769-4FD4-99A9-1ADD151B3206}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BGM_Menu_Off" ID="{B1D30EDE-EB86-4723-9889-6E8B60AC2270}">
+					<ChildrenList>
+						<Action Name="" ID="{091FBC1D-F247-4683-A9EA-29C2EEC3A4A1}" ShortID="770392398">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="State_Off" ID="{3C05F256-970C-4848-A35E-126932485743}" WorkUnitID="{E1CC3DB6-9769-4FD4-99A9-1ADD151B3206}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -563,7 +563,12 @@
 						<ActiveSource Name="OrbitalDashInside" ID="{7B0C8F3B-8409-40B6-A851-85DA4A647DD0}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Outside_BGM" ID="{E813B962-A49E-46D9-B07E-088CF72A3C23}" ShortID="939042214">
+				<RandomSequenceContainer Name="BGM_Outside" ID="{D4750261-61A5-4D5B-820C-051157E6C5B1}" ShortID="177399336">
+					<PropertyList>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1651577E-F4A7-41DB-8809-26E55165214A}"/>
@@ -573,18 +578,51 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="OrbitalDashBGM" ID="{94D2E368-93A9-4607-8247-4FD697957E87}">
-							<Language>SFX</Language>
-							<AudioFile>OrbitalDashBGM.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="519502798"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="Outside_BGM" ID="{E813B962-A49E-46D9-B07E-088CF72A3C23}" ShortID="939042214">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1651577E-F4A7-41DB-8809-26E55165214A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5B0694AA-29FF-45DE-A8E7-1445EFDAEEBA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="OrbitalDashBGM" ID="{94D2E368-93A9-4607-8247-4FD697957E87}">
+									<Language>SFX</Language>
+									<AudioFile>OrbitalDashBGM.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="519502798"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="OrbitalDashBGM" ID="{94D2E368-93A9-4607-8247-4FD697957E87}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="OrbitalDashBGM" ID="{94D2E368-93A9-4607-8247-4FD697957E87}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="BGM_Outside" ID="{6B9E1586-49B5-4B68-A3AE-D4EB4F13A73A}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="State_Off" ID="{3C05F256-970C-4848-A35E-126932485743}"/>
+								<CustomState Name="" ID="{5495909D-B3F3-465A-9FAE-8B2655BC2234}" ShortID="560558044">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="State_On" ID="{AE07CE31-2BF7-489F-95A6-30E5E4B9575C}"/>
+								<CustomState Name="" ID="{C8B99D55-BA22-4568-99A5-1A10E7AD8AD7}" ShortID="703662853"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
