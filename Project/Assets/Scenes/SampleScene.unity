@@ -134,8 +134,8 @@ GameObject:
   - component: {fileID: 18752140}
   - component: {fileID: 18752139}
   - component: {fileID: 18752138}
-  - component: {fileID: 18752137}
   - component: {fileID: 18752141}
+  - component: {fileID: 18752142}
   m_Layer: 0
   m_Name: MerteoritePlaceholder (18)
   m_TagString: ClimbPoint
@@ -143,27 +143,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &18752137
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18752136}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &18752138
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -213,7 +192,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 18752136}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: 8d1c6ce91c3ea0a47a8bf1863572327f, type: 3}
 --- !u!4 &18752140
 Transform:
   m_ObjectHideFlags: 0
@@ -256,6 +235,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &18752142
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18752136}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 8d1c6ce91c3ea0a47a8bf1863572327f, type: 3}
 --- !u!20 &65342677 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 3023362772866882330, guid: 8f11004d8c58b9b4face798ec9830a62, type: 3}
@@ -272,8 +273,8 @@ GameObject:
   - component: {fileID: 94037365}
   - component: {fileID: 94037364}
   - component: {fileID: 94037363}
-  - component: {fileID: 94037362}
   - component: {fileID: 94037366}
+  - component: {fileID: 94037367}
   m_Layer: 0
   m_Name: MerteoritePlaceholder (17)
   m_TagString: ClimbPoint
@@ -281,27 +282,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &94037362
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 94037361}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &94037363
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -351,7 +331,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94037361}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: f8f6f0c578519d747ae112426d475bd5, type: 3}
 --- !u!4 &94037365
 Transform:
   m_ObjectHideFlags: 0
@@ -360,13 +340,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94037361}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.98276025, z: -0, w: -0.1848846}
-  m_LocalPosition: {x: 7.0552273, y: 5.4428253, z: 19.686552}
+  m_LocalRotation: {x: 0.43940368, y: 0.8821036, z: 0.14578106, w: 0.08698041}
+  m_LocalPosition: {x: 7.0673275, y: 5.6021366, z: 19.601871}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 474368327}
-  m_LocalEulerAnglesHint: {x: 0, y: 201.309, z: 0}
+  m_LocalEulerAnglesHint: {x: -10.413, y: 163.365, z: 54.485}
 --- !u!54 &94037366
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -394,33 +374,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &104234831
-GameObject:
+--- !u!64 &94037367
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 104234835}
-  - component: {fileID: 104234834}
-  - component: {fileID: 104234833}
-  - component: {fileID: 104234832}
-  - component: {fileID: 104234836}
-  m_Layer: 0
-  m_Name: MerteoritePlaceholder (14)
-  m_TagString: ClimbPoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!135 &104234832
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104234831}
+  m_GameObject: {fileID: 94037361}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -432,9 +392,30 @@ SphereCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: f8f6f0c578519d747ae112426d475bd5, type: 3}
+--- !u!1 &104234831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 104234835}
+  - component: {fileID: 104234834}
+  - component: {fileID: 104234833}
+  - component: {fileID: 104234836}
+  - component: {fileID: 104234837}
+  m_Layer: 0
+  m_Name: MerteoritePlaceholder (14)
+  m_TagString: ClimbPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!23 &104234833
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -484,7 +465,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 104234831}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: a37b4025f6c582e42bcb9f6e12377966, type: 3}
 --- !u!4 &104234835
 Transform:
   m_ObjectHideFlags: 0
@@ -493,13 +474,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 104234831}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0010906145, y: 0.9517764, z: 0.00051273324, w: 0.30679038}
-  m_LocalPosition: {x: 0.39523602, y: 2.8968158, z: 1.5172901}
+  m_LocalRotation: {x: 0.1801665, y: 0.62761617, z: 0.15290566, w: 0.7417937}
+  m_LocalPosition: {x: 0.43942833, y: 2.9136596, z: 1.5186901}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 474368327}
-  m_LocalEulerAnglesHint: {x: -0.018, y: 144.268, z: 0.137}
+  m_LocalEulerAnglesHint: {x: 4.322, y: 81.507, z: 27.019}
 --- !u!54 &104234836
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -527,6 +508,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &104234837
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104234831}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a37b4025f6c582e42bcb9f6e12377966, type: 3}
 --- !u!1 &118383883
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,8 +648,8 @@ GameObject:
   - component: {fileID: 238632376}
   - component: {fileID: 238632375}
   - component: {fileID: 238632374}
-  - component: {fileID: 238632373}
   - component: {fileID: 238632377}
+  - component: {fileID: 238632378}
   m_Layer: 0
   m_Name: MerteoritePlaceholder (11)
   m_TagString: ClimbPoint
@@ -654,27 +657,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &238632373
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238632372}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &238632374
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -724,7 +706,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238632372}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: feff89830b5179546b9e6c982a984f04, type: 3}
 --- !u!4 &238632376
 Transform:
   m_ObjectHideFlags: 0
@@ -767,33 +749,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &295551644
-GameObject:
+--- !u!64 &238632378
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 295551648}
-  - component: {fileID: 295551647}
-  - component: {fileID: 295551646}
-  - component: {fileID: 295551645}
-  - component: {fileID: 295551649}
-  m_Layer: 0
-  m_Name: MerteoritePlaceholder (15)
-  m_TagString: ClimbPoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!135 &295551645
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 295551644}
+  m_GameObject: {fileID: 238632372}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -805,9 +767,30 @@ SphereCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: feff89830b5179546b9e6c982a984f04, type: 3}
+--- !u!1 &295551644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 295551648}
+  - component: {fileID: 295551647}
+  - component: {fileID: 295551646}
+  - component: {fileID: 295551649}
+  - component: {fileID: 295551650}
+  m_Layer: 0
+  m_Name: MerteoritePlaceholder (15)
+  m_TagString: ClimbPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!23 &295551646
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -857,7 +840,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295551644}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: a37b4025f6c582e42bcb9f6e12377966, type: 3}
 --- !u!4 &295551648
 Transform:
   m_ObjectHideFlags: 0
@@ -866,13 +849,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295551644}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0010906145, y: 0.9517764, z: 0.00051273324, w: 0.30679038}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.084122024, y: 0.91608083, z: 0.25821373, w: 0.2950341}
+  m_LocalPosition: {x: 0, y: 0.032627106, z: -0.021371841}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 474368327}
-  m_LocalEulerAnglesHint: {x: -0.018, y: 144.268, z: 0.137}
+  m_LocalEulerAnglesHint: {x: -25.053, y: 139.861, z: 19.774}
 --- !u!54 &295551649
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -900,6 +883,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &295551650
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295551644}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a37b4025f6c582e42bcb9f6e12377966, type: 3}
 --- !u!1 &317488569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,6 +1138,7 @@ MonoBehaviour:
   NumberDisplay: {fileID: 1228037477}
   LoseText: {fileID: 0}
   Player: {fileID: 1730181972}
+  handsList: []
 --- !u!1 &474368326
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,8 +1314,8 @@ GameObject:
   - component: {fileID: 665710917}
   - component: {fileID: 665710916}
   - component: {fileID: 665710915}
-  - component: {fileID: 665710914}
   - component: {fileID: 665710918}
+  - component: {fileID: 665710919}
   m_Layer: 0
   m_Name: MerteoritePlaceholder (5)
   m_TagString: ClimbPoint
@@ -1317,27 +1323,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &665710914
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 665710913}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &665710915
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1387,7 +1372,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665710913}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: f8f6f0c578519d747ae112426d475bd5, type: 3}
 --- !u!4 &665710917
 Transform:
   m_ObjectHideFlags: 0
@@ -1396,13 +1381,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665710913}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.353092, y: 2.8625753, z: 13.400221}
+  m_LocalRotation: {x: 0.2586297, y: -0.35196424, z: -0.5326747, w: 0.7249066}
+  m_LocalPosition: {x: 8.128111, y: 2.817524, z: 13.320752}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 474368327}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -51.796, z: -72.618}
 --- !u!54 &665710918
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1430,6 +1415,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &665710919
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665710913}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: f8f6f0c578519d747ae112426d475bd5, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1535,8 +1542,8 @@ GameObject:
   - component: {fileID: 756408258}
   - component: {fileID: 756408257}
   - component: {fileID: 756408256}
-  - component: {fileID: 756408255}
   - component: {fileID: 756408259}
+  - component: {fileID: 756408260}
   m_Layer: 0
   m_Name: MerteoritePlaceholder (19)
   m_TagString: ClimbPoint
@@ -1544,27 +1551,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &756408255
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 756408254}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &756408256
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1614,7 +1600,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756408254}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: a37b4025f6c582e42bcb9f6e12377966, type: 3}
 --- !u!4 &756408258
 Transform:
   m_ObjectHideFlags: 0
@@ -1623,13 +1609,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756408254}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00060899573, y: 0.61107844, z: 0.0010399317, w: 0.7915691}
-  m_LocalPosition: {x: 7.719591, y: 11.957663, z: 8.007033}
+  m_LocalRotation: {x: 0.12396512, y: 0.15785408, z: -0.11689645, w: 0.972651}
+  m_LocalPosition: {x: 7.699957, y: 11.944915, z: 8.039369}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 474368327}
-  m_LocalEulerAnglesHint: {x: -0.018, y: 75.335, z: 0.137}
+  m_LocalEulerAnglesHint: {x: 16.144, y: 16.829, z: -11.303}
 --- !u!54 &756408259
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1657,33 +1643,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &887618019
-GameObject:
+--- !u!64 &756408260
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 887618023}
-  - component: {fileID: 887618022}
-  - component: {fileID: 887618021}
-  - component: {fileID: 887618020}
-  - component: {fileID: 887618024}
-  m_Layer: 0
-  m_Name: MerteoritePlaceholder (21)
-  m_TagString: ClimbPoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!135 &887618020
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 887618019}
+  m_GameObject: {fileID: 756408254}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1695,9 +1661,30 @@ SphereCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a37b4025f6c582e42bcb9f6e12377966, type: 3}
+--- !u!1 &887618019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 887618023}
+  - component: {fileID: 887618022}
+  - component: {fileID: 887618021}
+  - component: {fileID: 887618024}
+  - component: {fileID: 887618025}
+  m_Layer: 0
+  m_Name: MerteoritePlaceholder (21)
+  m_TagString: ClimbPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!23 &887618021
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1747,7 +1734,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887618019}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: f8f6f0c578519d747ae112426d475bd5, type: 3}
 --- !u!4 &887618023
 Transform:
   m_ObjectHideFlags: 0
@@ -1756,13 +1743,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887618019}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00060899573, y: 0.61107844, z: 0.0010399317, w: 0.7915691}
-  m_LocalPosition: {x: 6.3800364, y: 10.292576, z: 9.459179}
+  m_LocalRotation: {x: 0.040674902, y: 0.5091161, z: -0.14267126, w: 0.84781563}
+  m_LocalPosition: {x: 6.364481, y: 9.908211, z: 9.274676}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 474368327}
-  m_LocalEulerAnglesHint: {x: -0.018, y: 75.335, z: 0.137}
+  m_LocalEulerAnglesHint: {x: 12.371, y: 60.682, z: -11.845}
 --- !u!54 &887618024
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1790,33 +1777,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &938493971
-GameObject:
+--- !u!64 &887618025
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 938493975}
-  - component: {fileID: 938493974}
-  - component: {fileID: 938493973}
-  - component: {fileID: 938493972}
-  - component: {fileID: 938493976}
-  m_Layer: 0
-  m_Name: MerteoritePlaceholder (7)
-  m_TagString: ClimbPoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!135 &938493972
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 938493971}
+  m_GameObject: {fileID: 887618019}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1828,9 +1795,30 @@ SphereCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: f8f6f0c578519d747ae112426d475bd5, type: 3}
+--- !u!1 &938493971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 938493975}
+  - component: {fileID: 938493974}
+  - component: {fileID: 938493973}
+  - component: {fileID: 938493976}
+  - component: {fileID: 938493977}
+  m_Layer: 0
+  m_Name: MerteoritePlaceholder (7)
+  m_TagString: ClimbPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!23 &938493973
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1880,7 +1868,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938493971}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: feff89830b5179546b9e6c982a984f04, type: 3}
 --- !u!4 &938493975
 Transform:
   m_ObjectHideFlags: 0
@@ -1923,33 +1911,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &954548857
-GameObject:
+--- !u!64 &938493977
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 954548861}
-  - component: {fileID: 954548860}
-  - component: {fileID: 954548859}
-  - component: {fileID: 954548858}
-  - component: {fileID: 954548862}
-  m_Layer: 0
-  m_Name: MerteoritePlaceholder (9)
-  m_TagString: ClimbPoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!135 &954548858
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954548857}
+  m_GameObject: {fileID: 938493971}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1961,9 +1929,30 @@ SphereCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: feff89830b5179546b9e6c982a984f04, type: 3}
+--- !u!1 &954548857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 954548861}
+  - component: {fileID: 954548860}
+  - component: {fileID: 954548859}
+  - component: {fileID: 954548862}
+  - component: {fileID: 954548863}
+  m_Layer: 0
+  m_Name: MerteoritePlaceholder (9)
+  m_TagString: ClimbPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!23 &954548859
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2013,7 +2002,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954548857}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: 8d1c6ce91c3ea0a47a8bf1863572327f, type: 3}
 --- !u!4 &954548861
 Transform:
   m_ObjectHideFlags: 0
@@ -2056,33 +2045,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &979379572
-GameObject:
+--- !u!64 &954548863
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 979379576}
-  - component: {fileID: 979379575}
-  - component: {fileID: 979379574}
-  - component: {fileID: 979379573}
-  - component: {fileID: 979379577}
-  m_Layer: 0
-  m_Name: MerteoritePlaceholder (13)
-  m_TagString: ClimbPoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!135 &979379573
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 979379572}
+  m_GameObject: {fileID: 954548857}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2094,9 +2063,30 @@ SphereCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 8d1c6ce91c3ea0a47a8bf1863572327f, type: 3}
+--- !u!1 &979379572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 979379576}
+  - component: {fileID: 979379575}
+  - component: {fileID: 979379574}
+  - component: {fileID: 979379577}
+  - component: {fileID: 979379578}
+  m_Layer: 0
+  m_Name: MerteoritePlaceholder (13)
+  m_TagString: ClimbPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!23 &979379574
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2146,7 +2136,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979379572}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: f8f6f0c578519d747ae112426d475bd5, type: 3}
 --- !u!4 &979379576
 Transform:
   m_ObjectHideFlags: 0
@@ -2155,13 +2145,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979379572}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0010906145, y: 0.9517764, z: 0.00051273324, w: 0.30679038}
-  m_LocalPosition: {x: 13.059969, y: 2.8652127, z: 7.1667576}
+  m_LocalRotation: {x: 0.05713993, y: 0.8694384, z: 0.28671348, w: 0.3982554}
+  m_LocalPosition: {x: 13.101643, y: 2.453919, z: 7.5070515}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 474368327}
-  m_LocalEulerAnglesHint: {x: -0.018, y: 144.268, z: 0.137}
+  m_LocalEulerAnglesHint: {x: -26.939, y: 125.554, z: 21.569}
 --- !u!54 &979379577
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2189,33 +2179,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &997103069
-GameObject:
+--- !u!64 &979379578
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 997103073}
-  - component: {fileID: 997103072}
-  - component: {fileID: 997103071}
-  - component: {fileID: 997103070}
-  - component: {fileID: 997103074}
-  m_Layer: 0
-  m_Name: MerteoritePlaceholder
-  m_TagString: ClimbPoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!135 &997103070
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 997103069}
+  m_GameObject: {fileID: 979379572}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2227,9 +2197,30 @@ SphereCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: f8f6f0c578519d747ae112426d475bd5, type: 3}
+--- !u!1 &997103069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 997103073}
+  - component: {fileID: 997103072}
+  - component: {fileID: 997103071}
+  - component: {fileID: 997103074}
+  - component: {fileID: 997103075}
+  m_Layer: 0
+  m_Name: MerteoritePlaceholder
+  m_TagString: ClimbPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!23 &997103071
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2279,7 +2270,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 997103069}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: 8d1c6ce91c3ea0a47a8bf1863572327f, type: 3}
 --- !u!4 &997103073
 Transform:
   m_ObjectHideFlags: 0
@@ -2322,33 +2313,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &1020650154
-GameObject:
+--- !u!64 &997103075
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1020650158}
-  - component: {fileID: 1020650157}
-  - component: {fileID: 1020650156}
-  - component: {fileID: 1020650155}
-  - component: {fileID: 1020650159}
-  m_Layer: 0
-  m_Name: MerteoritePlaceholder (1)
-  m_TagString: ClimbPoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!135 &1020650155
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020650154}
+  m_GameObject: {fileID: 997103069}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2360,9 +2331,30 @@ SphereCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 8d1c6ce91c3ea0a47a8bf1863572327f, type: 3}
+--- !u!1 &1020650154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1020650158}
+  - component: {fileID: 1020650157}
+  - component: {fileID: 1020650156}
+  - component: {fileID: 1020650159}
+  - component: {fileID: 1020650160}
+  m_Layer: 0
+  m_Name: MerteoritePlaceholder (1)
+  m_TagString: ClimbPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!23 &1020650156
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2412,7 +2404,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020650154}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: f8f6f0c578519d747ae112426d475bd5, type: 3}
 --- !u!4 &1020650158
 Transform:
   m_ObjectHideFlags: 0
@@ -2455,6 +2447,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &1020650160
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020650154}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: f8f6f0c578519d747ae112426d475bd5, type: 3}
 --- !u!1 &1091392818
 GameObject:
   m_ObjectHideFlags: 0
@@ -2610,8 +2624,8 @@ GameObject:
   - component: {fileID: 1154413723}
   - component: {fileID: 1154413722}
   - component: {fileID: 1154413721}
-  - component: {fileID: 1154413720}
   - component: {fileID: 1154413724}
+  - component: {fileID: 1154413725}
   m_Layer: 0
   m_Name: MerteoritePlaceholder (8)
   m_TagString: ClimbPoint
@@ -2619,27 +2633,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &1154413720
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154413719}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1154413721
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2689,7 +2682,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154413719}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: f8f6f0c578519d747ae112426d475bd5, type: 3}
 --- !u!4 &1154413723
 Transform:
   m_ObjectHideFlags: 0
@@ -2698,13 +2691,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154413719}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0010906145, y: 0.9517764, z: 0.00051273324, w: 0.30679038}
-  m_LocalPosition: {x: 11.8622875, y: 8.382325, z: 16.667376}
+  m_LocalRotation: {x: -0.10220347, y: 0.7995631, z: -0.14443141, w: 0.5739275}
+  m_LocalPosition: {x: 11.951689, y: 8.338718, z: 16.705952}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 474368327}
-  m_LocalEulerAnglesHint: {x: -0.018, y: 144.268, z: 0.137}
+  m_LocalEulerAnglesHint: {x: 6.526, y: 107.545, z: -19.352}
 --- !u!54 &1154413724
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2732,33 +2725,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &1159108200
-GameObject:
+--- !u!64 &1154413725
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1159108204}
-  - component: {fileID: 1159108203}
-  - component: {fileID: 1159108202}
-  - component: {fileID: 1159108201}
-  - component: {fileID: 1159108205}
-  m_Layer: 0
-  m_Name: MerteoritePlaceholder (22)
-  m_TagString: ClimbPoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!135 &1159108201
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1159108200}
+  m_GameObject: {fileID: 1154413719}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2770,9 +2743,30 @@ SphereCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: f8f6f0c578519d747ae112426d475bd5, type: 3}
+--- !u!1 &1159108200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1159108204}
+  - component: {fileID: 1159108203}
+  - component: {fileID: 1159108202}
+  - component: {fileID: 1159108205}
+  - component: {fileID: 1159108206}
+  m_Layer: 0
+  m_Name: MerteoritePlaceholder (22)
+  m_TagString: ClimbPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!23 &1159108202
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2822,7 +2816,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159108200}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: 8d1c6ce91c3ea0a47a8bf1863572327f, type: 3}
 --- !u!4 &1159108204
 Transform:
   m_ObjectHideFlags: 0
@@ -2831,13 +2825,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159108200}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.565925, z: -0, w: 0.8244568}
-  m_LocalPosition: {x: 17.010582, y: 10.307913, z: 15.220249}
+  m_LocalRotation: {x: -0.11116022, y: -0.80743307, z: -0.079020254, w: 0.57397836}
+  m_LocalPosition: {x: 16.973671, y: 10.3208065, z: 15.203419}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 474368327}
-  m_LocalEulerAnglesHint: {x: 0, y: -68.933, z: 0}
+  m_LocalEulerAnglesHint: {x: -14.786, y: -109.869, z: 5.269}
 --- !u!54 &1159108205
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2865,33 +2859,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &1161010369
-GameObject:
+--- !u!64 &1159108206
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1161010373}
-  - component: {fileID: 1161010372}
-  - component: {fileID: 1161010371}
-  - component: {fileID: 1161010370}
-  - component: {fileID: 1161010374}
-  m_Layer: 0
-  m_Name: MerteoritePlaceholder (12)
-  m_TagString: ClimbPoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!135 &1161010370
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1161010369}
+  m_GameObject: {fileID: 1159108200}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2903,9 +2877,30 @@ SphereCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 8d1c6ce91c3ea0a47a8bf1863572327f, type: 3}
+--- !u!1 &1161010369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1161010373}
+  - component: {fileID: 1161010372}
+  - component: {fileID: 1161010371}
+  - component: {fileID: 1161010374}
+  - component: {fileID: 1161010375}
+  m_Layer: 0
+  m_Name: MerteoritePlaceholder (12)
+  m_TagString: ClimbPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!23 &1161010371
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2955,7 +2950,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161010369}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: f8f6f0c578519d747ae112426d475bd5, type: 3}
 --- !u!4 &1161010373
 Transform:
   m_ObjectHideFlags: 0
@@ -2964,13 +2959,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161010369}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0010906145, y: 0.9517764, z: 0.00051273324, w: 0.30679038}
-  m_LocalPosition: {x: 12.735861, y: 6.717238, z: 18.439377}
+  m_LocalRotation: {x: 0.7818727, y: 0.0076362113, z: 0.49685228, w: 0.37650326}
+  m_LocalPosition: {x: 12.954357, y: 6.901801, z: 18.591267}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 474368327}
-  m_LocalEulerAnglesHint: {x: -0.018, y: 144.268, z: 0.137}
+  m_LocalEulerAnglesHint: {x: 35.533, y: 105.887, z: 151.679}
 --- !u!54 &1161010374
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2998,33 +2993,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &1186550381
-GameObject:
+--- !u!64 &1161010375
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1186550385}
-  - component: {fileID: 1186550384}
-  - component: {fileID: 1186550383}
-  - component: {fileID: 1186550382}
-  - component: {fileID: 1186550386}
-  m_Layer: 0
-  m_Name: MerteoritePlaceholder (6)
-  m_TagString: ClimbPoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!135 &1186550382
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1186550381}
+  m_GameObject: {fileID: 1161010369}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3036,9 +3011,30 @@ SphereCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: f8f6f0c578519d747ae112426d475bd5, type: 3}
+--- !u!1 &1186550381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1186550385}
+  - component: {fileID: 1186550384}
+  - component: {fileID: 1186550383}
+  - component: {fileID: 1186550386}
+  - component: {fileID: 1186550387}
+  m_Layer: 0
+  m_Name: MerteoritePlaceholder (6)
+  m_TagString: ClimbPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!23 &1186550383
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3088,7 +3084,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1186550381}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: f8f6f0c578519d747ae112426d475bd5, type: 3}
 --- !u!4 &1186550385
 Transform:
   m_ObjectHideFlags: 0
@@ -3097,13 +3093,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1186550381}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.933092, y: 6.7325754, z: 10.590221}
+  m_LocalRotation: {x: 0.07318985, y: -0.4217302, z: -0.15453504, w: 0.8904527}
+  m_LocalPosition: {x: 21.800339, y: 6.696667, z: 10.625349}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 474368327}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -50.686, z: -19.691}
 --- !u!54 &1186550386
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3131,33 +3127,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &1219390837
-GameObject:
+--- !u!64 &1186550387
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1219390841}
-  - component: {fileID: 1219390840}
-  - component: {fileID: 1219390839}
-  - component: {fileID: 1219390838}
-  - component: {fileID: 1219390842}
-  m_Layer: 0
-  m_Name: MerteoritePlaceholder (23)
-  m_TagString: ClimbPoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!135 &1219390838
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219390837}
+  m_GameObject: {fileID: 1186550381}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3169,9 +3145,30 @@ SphereCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: f8f6f0c578519d747ae112426d475bd5, type: 3}
+--- !u!1 &1219390837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1219390841}
+  - component: {fileID: 1219390840}
+  - component: {fileID: 1219390839}
+  - component: {fileID: 1219390842}
+  - component: {fileID: 1219390843}
+  m_Layer: 0
+  m_Name: MerteoritePlaceholder (23)
+  m_TagString: ClimbPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!23 &1219390839
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3221,7 +3218,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1219390837}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: f8f6f0c578519d747ae112426d475bd5, type: 3}
 --- !u!4 &1219390841
 Transform:
   m_ObjectHideFlags: 0
@@ -3230,13 +3227,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1219390837}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.565925, z: -0, w: 0.8244568}
-  m_LocalPosition: {x: 15.693092, y: 11.882576, z: 20.410221}
+  m_LocalRotation: {x: -0.033264924, y: -0.5654648, z: 0.022833781, w: 0.82378495}
+  m_LocalPosition: {x: 15.693092, y: 12.40545, z: 20.033436}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 474368327}
-  m_LocalEulerAnglesHint: {x: 0, y: -68.933, z: 0}
+  m_LocalEulerAnglesHint: {x: -1.661, y: -68.996, z: 4.317}
 --- !u!54 &1219390842
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3264,6 +3261,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &1219390843
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219390837}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: f8f6f0c578519d747ae112426d475bd5, type: 3}
 --- !u!1 &1228037475
 GameObject:
   m_ObjectHideFlags: 0
@@ -3411,8 +3430,8 @@ GameObject:
   - component: {fileID: 1293501605}
   - component: {fileID: 1293501604}
   - component: {fileID: 1293501603}
-  - component: {fileID: 1293501602}
   - component: {fileID: 1293501606}
+  - component: {fileID: 1293501607}
   m_Layer: 0
   m_Name: MerteoritePlaceholder (4)
   m_TagString: ClimbPoint
@@ -3420,27 +3439,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &1293501602
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1293501601}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1293501603
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3490,7 +3488,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293501601}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: feff89830b5179546b9e6c982a984f04, type: 3}
 --- !u!4 &1293501605
 Transform:
   m_ObjectHideFlags: 0
@@ -3533,6 +3531,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &1293501607
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293501601}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: feff89830b5179546b9e6c982a984f04, type: 3}
 --- !u!1 &1344174150
 GameObject:
   m_ObjectHideFlags: 0
@@ -3610,8 +3630,8 @@ GameObject:
   - component: {fileID: 1544987803}
   - component: {fileID: 1544987802}
   - component: {fileID: 1544987801}
-  - component: {fileID: 1544987800}
   - component: {fileID: 1544987804}
+  - component: {fileID: 1544987805}
   m_Layer: 0
   m_Name: MerteoritePlaceholder (10)
   m_TagString: ClimbPoint
@@ -3619,27 +3639,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &1544987800
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1544987799}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1544987801
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3689,7 +3688,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544987799}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: a37b4025f6c582e42bcb9f6e12377966, type: 3}
 --- !u!4 &1544987803
 Transform:
   m_ObjectHideFlags: 0
@@ -3698,13 +3697,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544987799}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0010906145, y: 0.9517764, z: 0.00051273324, w: 0.30679038}
-  m_LocalPosition: {x: 17.996563, y: 7.923277, z: 21.30198}
+  m_LocalRotation: {x: 0.08528492, y: 0.6373039, z: -0.74059427, w: -0.19516768}
+  m_LocalPosition: {x: 17.96848, y: 7.962304, z: 21.412449}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 474368327}
-  m_LocalEulerAnglesHint: {x: -0.018, y: 144.268, z: 0.137}
+  m_LocalEulerAnglesHint: {x: 65.599, y: -65.222, z: -254.341}
 --- !u!54 &1544987804
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3732,6 +3731,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &1544987805
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544987799}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a37b4025f6c582e42bcb9f6e12377966, type: 3}
 --- !u!1 &1567561491
 GameObject:
   m_ObjectHideFlags: 0
@@ -4087,8 +4108,8 @@ GameObject:
   - component: {fileID: 1949967001}
   - component: {fileID: 1949967000}
   - component: {fileID: 1949966999}
-  - component: {fileID: 1949966998}
   - component: {fileID: 1949967002}
+  - component: {fileID: 1949967003}
   m_Layer: 0
   m_Name: MerteoritePlaceholder (2)
   m_TagString: ClimbPoint
@@ -4096,27 +4117,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &1949966998
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1949966997}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1949966999
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4166,7 +4166,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949966997}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: 8d1c6ce91c3ea0a47a8bf1863572327f, type: 3}
 --- !u!4 &1949967001
 Transform:
   m_ObjectHideFlags: 0
@@ -4175,13 +4175,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949966997}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.8969073, y: 7.9525757, z: 4.8102217}
+  m_LocalRotation: {x: 0.111246966, y: -0.16819999, z: -0.20468299, w: 0.9578297}
+  m_LocalPosition: {x: -3.9000835, y: 7.91726, z: 4.811121}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 474368327}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 8.294, y: -21.817, z: -25.726}
 --- !u!54 &1949967002
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4209,33 +4209,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &2015112641
-GameObject:
+--- !u!64 &1949967003
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2015112645}
-  - component: {fileID: 2015112644}
-  - component: {fileID: 2015112643}
-  - component: {fileID: 2015112642}
-  - component: {fileID: 2015112646}
-  m_Layer: 0
-  m_Name: MerteoritePlaceholder (3)
-  m_TagString: ClimbPoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!135 &2015112642
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2015112641}
+  m_GameObject: {fileID: 1949966997}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -4247,9 +4227,30 @@ SphereCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 8d1c6ce91c3ea0a47a8bf1863572327f, type: 3}
+--- !u!1 &2015112641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2015112645}
+  - component: {fileID: 2015112644}
+  - component: {fileID: 2015112643}
+  - component: {fileID: 2015112646}
+  - component: {fileID: 2015112647}
+  m_Layer: 0
+  m_Name: MerteoritePlaceholder (3)
+  m_TagString: ClimbPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!23 &2015112643
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4299,7 +4300,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2015112641}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: feff89830b5179546b9e6c982a984f04, type: 3}
 --- !u!4 &2015112645
 Transform:
   m_ObjectHideFlags: 0
@@ -4308,13 +4309,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2015112641}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.23690796, y: 1.8825753, z: 9.030222}
+  m_LocalRotation: {x: 0.28366244, y: -0.6544955, z: 0.2912459, w: 0.6374536}
+  m_LocalPosition: {x: -0.22370625, y: 1.889246, z: 9.0364895}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 474368327}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 47.977, y: -91.511, z: 0}
 --- !u!54 &2015112646
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4342,6 +4343,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &2015112647
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015112641}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: feff89830b5179546b9e6c982a984f04, type: 3}
 --- !u!1 &2023634752
 GameObject:
   m_ObjectHideFlags: 0
@@ -4490,8 +4513,8 @@ GameObject:
   - component: {fileID: 2118339226}
   - component: {fileID: 2118339225}
   - component: {fileID: 2118339224}
-  - component: {fileID: 2118339223}
   - component: {fileID: 2118339227}
+  - component: {fileID: 2118339228}
   m_Layer: 0
   m_Name: MerteoritePlaceholder (20)
   m_TagString: ClimbPoint
@@ -4499,27 +4522,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &2118339223
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118339222}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2118339224
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4569,7 +4571,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118339222}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: a37b4025f6c582e42bcb9f6e12377966, type: 3}
 --- !u!4 &2118339226
 Transform:
   m_ObjectHideFlags: 0
@@ -4578,13 +4580,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118339222}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00060899573, y: 0.61107844, z: 0.0010399317, w: 0.7915691}
-  m_LocalPosition: {x: 10.6143265, y: 9.308676, z: 12.911229}
+  m_LocalRotation: {x: 0.34481516, y: 0.32729903, z: -0.6584279, w: 0.5834815}
+  m_LocalPosition: {x: 10.512154, y: 9.321915, z: 12.927629}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 474368327}
-  m_LocalEulerAnglesHint: {x: -0.018, y: 75.335, z: 0.137}
+  m_LocalEulerAnglesHint: {x: 56.449, y: -7.499, z: -100.936}
 --- !u!54 &2118339227
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4612,33 +4614,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &2138446924
-GameObject:
+--- !u!64 &2118339228
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2138446928}
-  - component: {fileID: 2138446927}
-  - component: {fileID: 2138446926}
-  - component: {fileID: 2138446925}
-  - component: {fileID: 2138446929}
-  m_Layer: 0
-  m_Name: MerteoritePlaceholder (16)
-  m_TagString: ClimbPoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!135 &2138446925
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2138446924}
+  m_GameObject: {fileID: 2118339222}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -4650,9 +4632,30 @@ SphereCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a37b4025f6c582e42bcb9f6e12377966, type: 3}
+--- !u!1 &2138446924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2138446928}
+  - component: {fileID: 2138446927}
+  - component: {fileID: 2138446926}
+  - component: {fileID: 2138446929}
+  - component: {fileID: 2138446930}
+  m_Layer: 0
+  m_Name: MerteoritePlaceholder (16)
+  m_TagString: ClimbPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!23 &2138446926
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4702,7 +4705,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138446924}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: feff89830b5179546b9e6c982a984f04, type: 3}
 --- !u!4 &2138446928
 Transform:
   m_ObjectHideFlags: 0
@@ -4711,13 +4714,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138446924}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00030225658, y: 0.12553267, z: -0.0011666118, w: -0.99208874}
-  m_LocalPosition: {x: -6.9921136, y: 6.9525757, z: 16.9683}
+  m_LocalRotation: {x: 0.12254883, y: 0.52624667, z: 0.037787773, w: -0.840606}
+  m_LocalPosition: {x: -6.9604235, y: 6.942708, z: 16.98868}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 474368327}
-  m_LocalEulerAnglesHint: {x: -0.018, y: 345.577, z: 0.137}
+  m_LocalEulerAnglesHint: {x: -14.229, y: 295.421, z: 3.872}
 --- !u!54 &2138446929
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4745,6 +4748,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &2138446930
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138446924}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: feff89830b5179546b9e6c982a984f04, type: 3}
 --- !u!224 &6998597905047713771 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5082677445220509468, guid: b9705df7e6018754cad7c11201368d83, type: 3}
