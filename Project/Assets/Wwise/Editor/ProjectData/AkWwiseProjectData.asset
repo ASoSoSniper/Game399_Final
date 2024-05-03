@@ -108,7 +108,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6b136f46a09225479a8dec645cd6f39d
     GuidInternal: 
-    m_lastTime: -8584869288121824476
+    m_lastTime: -8584869227401534927
     List:
     - name: BGM_Inside_Off
       guid: 695553f207002b4a914caaeebdac939d
@@ -680,7 +680,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: b63dcce16997d44f99a91add151b3206
     GuidInternal: 
-    m_lastTime: -8584869293420757391
+    m_lastTime: -8584869227401492444
     List:
     - name: BGM_Outside
       guid: 86159e6bb549684ba3aed4eb4f13a73a
