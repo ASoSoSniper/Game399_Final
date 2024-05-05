@@ -14,6 +14,8 @@ public class ClimberHand : MonoBehaviour
 
     public List<GameObject> grabObjects = new List<GameObject>();
 
+    AudioSource audioSource;
+
     private void Awake()
     {
         climber = GetComponentInParent<Climber>();
@@ -22,6 +24,7 @@ public class ClimberHand : MonoBehaviour
     private void Start()
     {
         lastPosition = transform.position;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -146,5 +149,14 @@ public class ClimberHand : MonoBehaviour
 
         MeleeWeapon weapon = grabPoint.GetComponent<MeleeWeapon>();
         if (weapon) weapon.ToggleGrabMode(false);
+    }
+
+    public void PlayGrabSound(List<AudioClip> grabSounds)
+    {
+        if (!audioSource) return;
+
+        AudioClip randomClip = grabSounds[Random.Range(0, grabSounds.Count - 1)];
+        
+        audioSource.PlayOneShot(randomClip);
     }
 }

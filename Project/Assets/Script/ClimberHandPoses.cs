@@ -8,6 +8,9 @@ public class ClimberHandPoses : MonoBehaviour
 
     public Animator animator;
 
+    [SerializeField] bool test;
+    [SerializeField] float testAlpha = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,13 +20,26 @@ public class ClimberHandPoses : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryHandTrigger, controller))
+        float input = 0f;
+
+        if (!test)
+        {
+            input = OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, controller);
+        }
+        else
+        {
+            input = Mathf.Clamp01(testAlpha);
+        }
+
+        animator.SetFloat("Blend", input);
+
+        /*if (OVRInput.GetDown(OVRInput.Button.PrimaryHandTrigger, controller))
         {
             animator.SetBool("Grab", true);
         }
         if (OVRInput.GetUp(OVRInput.Button.PrimaryHandTrigger, controller))
         {
             animator.SetBool("Grab", false);
-        }
+        }*/
     }
 }

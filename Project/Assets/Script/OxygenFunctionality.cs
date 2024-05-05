@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class OxygenFunctionality : MonoBehaviour
 {
@@ -15,6 +16,10 @@ public class OxygenFunctionality : MonoBehaviour
     public GameObject LoseText;
     public GameObject Player;
     public ClimberHand[] handsList;
+    [SerializeField] float killTime = 5f;
+
+    bool killed = false;
+    bool begunFadeOut = false;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +34,7 @@ public class OxygenFunctionality : MonoBehaviour
     void Update()
     {
         UpdateOxygenBar();
+        CountdownReset();
     }
 
     void UpdateOxygenBar()
@@ -55,6 +61,9 @@ public class OxygenFunctionality : MonoBehaviour
 
     public void KillPlayer()
     {
+        if (killed) return;
+        killed = true;
+
         NumberDisplay.text = "0 / " + maxOxygen.ToString();
         if (LoseText) LoseText.SetActive(true);
         Player.GetComponent<Rigidbody>().velocity = Vector3.zero;
@@ -62,5 +71,22 @@ public class OxygenFunctionality : MonoBehaviour
         {
             handsList[i].enabled = false;
         }
+    }
+
+    void CountdownReset()
+    {
+        if (!killed) return;
+
+        killTime -= Time.deltaTime;
+
+        if (!begunFadeOut && killTime < 2f)
+        {
+            OVRScreenFade screenFade = FindObjectOfType<OVRScreenFade>();
+            if (screenFade) screenFade.FadeOut();
+
+            begunFadeOut = true;
+        }
+
+        if (killTime < 0f) SceneManager.LoadScene("SampleScene");
     }
 }

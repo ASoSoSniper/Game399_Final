@@ -17,6 +17,11 @@ public class Climber : MonoBehaviour
     Vector3 initialPos = Vector3.zero;
 
     [SerializeField] bool inGrabMode = false;
+    [SerializeField] bool test = false;
+    [SerializeField] float testForce = 50f;
+
+    [Header("Sounds")]
+    [SerializeField] List<AudioClip> grabSounds;
 
     private void Awake()
     {
@@ -43,7 +48,16 @@ public class Climber : MonoBehaviour
     {
         CalculateMovement();
 
-        if (Input.GetKeyDown(KeyCode.A)) ResetMovement();
+        if (test)
+        {
+            if (Input.GetKeyDown(KeyCode.A)) rigidBody.AddForce(-transform.right * testForce, ForceMode.Impulse);
+            if (Input.GetKeyDown(KeyCode.D)) rigidBody.AddForce(transform.right * testForce, ForceMode.Impulse);
+            if (Input.GetKeyDown(KeyCode.W)) rigidBody.AddForce(transform.forward * testForce, ForceMode.Impulse);
+            if (Input.GetKeyDown(KeyCode.S)) rigidBody.AddForce(-transform.forward * testForce, ForceMode.Impulse);
+            if (Input.GetKeyDown(KeyCode.E)) rigidBody.AddForce(transform.up * testForce, ForceMode.Impulse);
+            if (Input.GetKeyDown(KeyCode.Q)) rigidBody.AddForce(-transform.up * testForce, ForceMode.Impulse);
+            if (Input.GetKeyDown(KeyCode.LeftShift)) rigidBody.velocity = Vector3.zero;
+        }
     }
 
     void CalculateMovement()
@@ -67,6 +81,7 @@ public class Climber : MonoBehaviour
             currentHand.ReleasePoint();
 
         currentHand = hand;
+        currentHand.PlayGrabSound(grabSounds);
     }
 
     public void ClearHand()

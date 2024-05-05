@@ -4,9 +4,21 @@ using UnityEngine;
 
 public class KillBarrier : MonoBehaviour
 {
-    private void OnTriggerExit(Collider other)
+    Climber player;
+    SphereCollider collider;
+
+    private void Start()
     {
-        if (other.gameObject.GetComponent<Climber>())
+        player = FindObjectOfType<Climber>();
+
+        collider = GetComponent<SphereCollider>();
+    }
+
+    private void Update()
+    {
+        float dist = Vector3.Distance(transform.position, player.transform.position);
+
+        if (dist > collider.radius)
         {
             FindObjectOfType<OxygenFunctionality>().KillPlayer();
             Debug.Log("Out of bounds");
