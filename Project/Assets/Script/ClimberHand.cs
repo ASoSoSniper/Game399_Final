@@ -7,6 +7,8 @@ public class ClimberHand : MonoBehaviour
     public OVRInput.Controller controller = OVRInput.Controller.None;
 
     [SerializeField] GameObject grabPoint = null;
+    [SerializeField] GameObject grip;
+    [SerializeField] GameObject gripPrefab;
     [SerializeField] Climber climber = null;
     Vector3 lastPosition = Vector3.zero;
 
@@ -42,6 +44,8 @@ public class ClimberHand : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (grip) transform.position = grip.transform.position;
+
         lastPosition = transform.position;
     }
     private void LateUpdate()
@@ -70,13 +74,15 @@ public class ClimberHand : MonoBehaviour
             if (grabPoint.CompareTag("ClimbPoint"))
             {
                 climber.SetHand(this);
+
+                grip = Instantiate(gripPrefab, grabPoint.transform);
+                grip.transform.position = transform.position;
             }
             else if (grabPoint.CompareTag("Grabbable"))
             {
                 GrabWeapon();
             }
         }
-            
     }
 
     public void ReleasePoint()
@@ -93,6 +99,8 @@ public class ClimberHand : MonoBehaviour
             }
         }
 
+        Destroy(grip);
+        grip = null;
         grabPoint = null;
     }
 

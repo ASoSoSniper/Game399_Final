@@ -147,6 +147,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: 2
   grabPoint: {fileID: 0}
+  grip: {fileID: 0}
+  gripPrefab: {fileID: 6564003434810197588, guid: fa1b440c40540994488fb79433a6b770, type: 3}
   climber: {fileID: 0}
   grabObjects: []
 --- !u!54 &3577975034105442467
@@ -319,7 +321,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654483171555584977}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.26}
+  m_LocalPosition: {x: 0, y: 0, z: 0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -327,7 +329,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &7512252580617715473
@@ -636,6 +638,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: 1
   grabPoint: {fileID: 0}
+  grip: {fileID: 0}
+  gripPrefab: {fileID: 6564003434810197588, guid: fa1b440c40540994488fb79433a6b770, type: 3}
   climber: {fileID: 0}
   grabObjects: []
 --- !u!54 &2892885743469231454
@@ -831,7 +835,9 @@ GameObject:
   - component: {fileID: 5272350993109640039}
   - component: {fileID: 7556275648770717357}
   - component: {fileID: 803022716877289142}
+  - component: {fileID: 9134873854244991699}
   - component: {fileID: 1062169281762852156}
+  - component: {fileID: 1335643806902843904}
   m_Layer: 0
   m_Name: Climber
   m_TagString: Player
@@ -875,7 +881,7 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2
+  m_Height: 1
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
@@ -1021,6 +1027,31 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4142460691047854597}
   m_Enabled: 1
+--- !u!114 &9134873854244991699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4142460691047854597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf02dd597de31042ad09db42f2110ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxOxygen: 100
+  oxygenTick: 0.001
+  oxygenProgressBar: {fileID: 0}
+  NumberDisplay: {fileID: 0}
+  LoseText: {fileID: 1654483171555584977}
+  handsList: []
+  killTime: 5
+  oxygenLowSound: {fileID: 8300000, guid: 65eb09415250f96409fa9091b4498bb1, type: 3}
+  oxygenRefilledSound: {fileID: 8300000, guid: 2269b7086fdc2884db6157bd581a5f2e, type: 3}
+  oxygenEmptySound: {fileID: 8300000, guid: 25574f4e18bb75e4c85bbad2dfa428b1, type: 3}
+  oxygenEmptyAmbient: {fileID: 8300000, guid: de769f8afc1639642be00f8cdc31561c, type: 3}
+  audioSource: {fileID: 1062169281762852156}
+  audioSourceAmbient: {fileID: 1335643806902843904}
 --- !u!82 &1062169281762852156
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1036,6 +1067,102 @@ AudioSource:
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1335643806902843904
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4142460691047854597}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1683,7 +1810,6 @@ GameObject:
   - component: {fileID: 4670344565658672224}
   - component: {fileID: 7597207045021690461}
   - component: {fileID: 9678933622234952}
-  - component: {fileID: 383030521693805042}
   - component: {fileID: 2774682627043855045}
   - component: {fileID: 2274527826701846098}
   - component: {fileID: 5574661604860999165}
@@ -1814,20 +1940,6 @@ MonoBehaviour:
   resetHmdPoseByMiddleMouseButton: 1
   activateKeys: 3201000031010000
   pitchKeys: 3401000033010000
---- !u!114 &383030521693805042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8975073827456490980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b3e9ff8910dd2c46b624667f301c04f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointImage: {fileID: 0}
-  waypointTransform: {fileID: 0}
 --- !u!114 &2774682627043855045
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -14,19 +14,26 @@ public class OxygenFunctionality : MonoBehaviour
     public Image oxygenProgressBar;
     public TMP_Text NumberDisplay;
     public GameObject LoseText;
-    public GameObject Player;
     public ClimberHand[] handsList;
     [SerializeField] float killTime = 5f;
 
+    [SerializeField] AudioClip oxygenLowSound;
+    [SerializeField] AudioClip oxygenRefilledSound;
+    [SerializeField] AudioClip oxygenEmptySound;
+    [SerializeField] AudioClip oxygenEmptyAmbient;
+
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioSource audioSourceAmbient;
+
     bool killed = false;
     bool begunFadeOut = false;
+    bool oxygenLow = false;
 
     // Start is called before the first frame update
     void Start()
     {
         oxygenAmount = maxOxygen;
         if (LoseText) LoseText.SetActive(false);
-        Player = GameObject.Find("Climber");
         handsList = FindObjectsOfType<ClimberHand>();
     }
 
@@ -40,13 +47,31 @@ public class OxygenFunctionality : MonoBehaviour
     void UpdateOxygenBar()
     {
         oxygenAmount -= oxygenTick * Time.timeScale;
+        Debug.Log("Oxygen: " + oxygenAmount.ToString());
+
+        if (oxygenAmount < 0.2f * maxOxygen)
+        {
+            if (!oxygenLow)
+            {
+                audioSourceAmbient.clip = oxygenLowSound;
+                audioSourceAmbient.Play();
+                oxygenLow = true;
+            }
+        }
+        else
+        {
+            oxygenLow = false;
+        }
 
         if(oxygenAmount > 0.0f)
         {
-            oxygenProgressBar.rectTransform.localScale = new Vector3(oxygenProgressBar.rectTransform.localScale.x, oxygenAmount / maxOxygen, oxygenProgressBar.rectTransform.localScale.z);
+            if (oxygenProgressBar) 
+                oxygenProgressBar.rectTransform.localScale = new Vector3(oxygenProgressBar.rectTransform.localScale.x, oxygenAmount / maxOxygen, oxygenProgressBar.rectTransform.localScale.z);
             
             roundedOxygenAmount = Mathf.RoundToInt(oxygenAmount);
-            NumberDisplay.text = roundedOxygenAmount.ToString() + " / " + maxOxygen.ToString();
+
+            if (NumberDisplay) 
+                NumberDisplay.text = roundedOxygenAmount.ToString() + " / " + maxOxygen.ToString();
         }
         else
         {
@@ -57,6 +82,7 @@ public class OxygenFunctionality : MonoBehaviour
     public void GainOxygen(float oxygen)
     {
         oxygenAmount = Mathf.Clamp(oxygenAmount + oxygen, 0f, maxOxygen);
+        audioSource.PlayOneShot(oxygenRefilledSound);
     }
 
     public void KillPlayer()
@@ -64,13 +90,18 @@ public class OxygenFunctionality : MonoBehaviour
         if (killed) return;
         killed = true;
 
-        NumberDisplay.text = "0 / " + maxOxygen.ToString();
+        if (NumberDisplay) NumberDisplay.text = "0 / " + maxOxygen.ToString();
         if (LoseText) LoseText.SetActive(true);
-        Player.GetComponent<Rigidbody>().velocity = Vector3.zero;
+
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
         for (int i = 0; i < handsList.Length; i++)
         {
             handsList[i].enabled = false;
         }
+
+        audioSource.PlayOneShot(oxygenEmptySound);
+        audioSourceAmbient.clip = oxygenEmptyAmbient;
+        audioSourceAmbient.Play();
     }
 
     void CountdownReset()

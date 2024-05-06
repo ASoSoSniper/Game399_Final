@@ -34,7 +34,7 @@ public class HittableObject : MonoBehaviour
 
     [SerializeField] GameObject brokenSoundObject;
     [SerializeField] GameObject repairedSoundObject;
-    GameObject currentSoundObject;
+    [SerializeField] GameObject currentSoundObject;
     
     public bool isRepaired;
 
@@ -54,7 +54,11 @@ public class HittableObject : MonoBehaviour
     public void ToggleRepair(bool repaired)
     {
         isRepaired = repaired;
-        if (currentSoundObject) Destroy(currentSoundObject);
+        if (currentSoundObject)
+        {
+            currentSoundObject.GetComponent<AkAmbient>().Stop(1);
+            Destroy(currentSoundObject);
+        }
 
         if (repaired)
         {
