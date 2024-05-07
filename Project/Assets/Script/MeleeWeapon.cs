@@ -11,6 +11,8 @@ public class MeleeWeapon : MonoBehaviour
     [SerializeField] Material normalMat;
     [SerializeField] Material hitMat;
     [SerializeField] MeshRenderer mesh;
+    [SerializeField] List<AudioClip> impactSounds;
+    AudioSource audioSource;
 
     Vector3 lastPosition = Vector3.zero;
     Quaternion lastRotation;
@@ -34,6 +36,7 @@ public class MeleeWeapon : MonoBehaviour
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
 
         initPos = transform.position;
         initRot = transform.rotation;
@@ -114,6 +117,8 @@ public class MeleeWeapon : MonoBehaviour
 
     public void HitObject(Collider other)
     {
+        if (impactSounds.Count > 0) audioSource.PlayOneShot(impactSounds[Random.Range(0, impactSounds.Count)]);
+
         HittableObject hit = other.gameObject.GetComponent<HittableObject>();
 
         if (!hit) return;
