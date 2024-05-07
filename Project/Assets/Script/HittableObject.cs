@@ -27,7 +27,6 @@ public class HittableObject : MonoBehaviour
 {
     [SerializeField] Material normalMat;
     [SerializeField] Material hitMat;
-    [SerializeField] MeshRenderer mesh;
 
     [SerializeField] GameObject waypoint;
     [SerializeField] ParticleSystem particle;
@@ -62,11 +61,6 @@ public class HittableObject : MonoBehaviour
 
         if (repaired)
         {
-            if (mesh && hitMat)
-            {
-                mesh.material = hitMat;
-            }
-
             waypoint.SetActive(false);
             particle.Stop();
 
@@ -74,11 +68,6 @@ public class HittableObject : MonoBehaviour
         }
         else
         {
-            if (mesh && normalMat)
-            {
-                mesh.material = normalMat;
-            }
-
             waypoint.SetActive(true);
             particle.Play();
 
