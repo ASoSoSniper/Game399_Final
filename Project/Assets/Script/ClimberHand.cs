@@ -143,7 +143,11 @@ public class ClimberHand : MonoBehaviour
         grabPoint.transform.rotation = transform.rotation;
 
         MeleeWeapon weapon = grabPoint.GetComponent<MeleeWeapon>();
-        if (weapon) weapon.ToggleGrabMode(true);
+        if (weapon)
+        {
+            weapon.ToggleGrabMode(true);
+            weapon.endTriggered = true;
+        }
 
         OxygenTank oxygenTank = grabPoint.GetComponent<OxygenTank>();
         if (oxygenTank) oxygenTank.GrabOxygen();

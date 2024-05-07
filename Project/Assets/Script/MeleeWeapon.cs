@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MeleeWeapon : MonoBehaviour
 {
@@ -21,6 +22,13 @@ public class MeleeWeapon : MonoBehaviour
 
     Vector3 initPos;
     Quaternion initRot;
+
+    [Header("Menu Object")]
+    public bool menuObject = false;
+    public string sceneToLoad;
+    public bool closeApp = false;
+    [HideInInspector] public bool endTriggered = false;
+    [SerializeField] float loadTime = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -53,15 +61,35 @@ public class MeleeWeapon : MonoBehaviour
 
         lastPosition = transform.position;
         lastRotation = transform.rotation;
+
+        if (endTriggered)
+        {
+            loadTime -= Time.deltaTime;
+            if (loadTime <= 0)
+            {
+                if (menuObject)
+                {
+                    if (closeApp)
+                    {
+                        Application.Quit();
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene(sceneToLoad);
+                    }
+                }
+            }
+        }
+
         //Debug.Log("Velocity = " + spaceVelocity.magnitude + ", Rotation = " + spaceRotation.magnitude);
-        if (spaceRotation.magnitude >= hitRotation)
+        /*if (spaceRotation.magnitude >= hitRotation)
         {
             if (hitMat) mesh.material = hitMat;
         }
         else
         {
             if (normalMat) mesh.material = normalMat;
-        }
+        }*/
     }
 
     public void ToggleGrabMode(bool active)

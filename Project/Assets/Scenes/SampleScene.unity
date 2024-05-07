@@ -3794,9 +3794,21 @@ PrefabInstance:
       propertyPath: waypointTransform
       value: 
       objectReference: {fileID: 2106287810}
+    - target: {fileID: 2794210278925189837, guid: 8f11004d8c58b9b4face798ec9830a62, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3512283950988334465, guid: 8f11004d8c58b9b4face798ec9830a62, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4142460691047854597, guid: 8f11004d8c58b9b4face798ec9830a62, type: 3}
       propertyPath: m_Name
       value: Climber
+      objectReference: {fileID: 0}
+    - target: {fileID: 4507337388553604251, guid: 8f11004d8c58b9b4face798ec9830a62, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8013038913885834478, guid: 8f11004d8c58b9b4face798ec9830a62, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3935,7 +3947,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4544721634123099575, guid: 6ef377410d02fda49b077eaa45fa98d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.18
+      value: 0.69
       objectReference: {fileID: 0}
     - target: {fileID: 4544721634123099575, guid: 6ef377410d02fda49b077eaa45fa98d6, type: 3}
       propertyPath: m_LocalPosition.y

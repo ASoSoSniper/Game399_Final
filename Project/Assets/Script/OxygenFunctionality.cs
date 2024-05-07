@@ -47,7 +47,7 @@ public class OxygenFunctionality : MonoBehaviour
     void UpdateOxygenBar()
     {
         oxygenAmount -= oxygenTick * Time.timeScale;
-        Debug.Log("Oxygen: " + oxygenAmount.ToString());
+        //Debug.Log("Oxygen: " + oxygenAmount.ToString());
 
         if (oxygenAmount < 0.2f * maxOxygen)
         {
