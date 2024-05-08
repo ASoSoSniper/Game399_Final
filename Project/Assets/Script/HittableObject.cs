@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR // => Ignore from here to next endif if not in editor
 using UnityEditor;
-
 
 [CustomEditor(typeof(HittableObject))]
 public class HittableObjectEditor : Editor
@@ -22,6 +22,8 @@ public class HittableObjectEditor : Editor
         }
     }
 }
+
+#endif
 
 public class HittableObject : MonoBehaviour
 {
